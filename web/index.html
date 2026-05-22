@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Víctor Alonso | Portfolio & CV Selector</title>
+  <meta name="description" content="Portal oficial de currículums de Víctor Alonso - Senior Software Engineer, Android Specialist & Technical SEO. Accede y descarga las versiones premium y ATS-friendly en español e inglés.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="es">
+
+  <!-- Glow Background Effects -->
+  <div class="glow-bg">
+    <div class="glow-1"></div>
+    <div class="glow-2"></div>
+  </div>
+
+  <header class="main-header">
+    <div class="header-container">
+      <div class="brand">
+        <span class="logo-text">VA</span>
+        <div class="brand-title">
+          <h1>Víctor Alonso</h1>
+          <p class="subtitle lang-es">Senior Software Engineer · Especialista Móvil & SEO Técnico</p>
+          <p class="subtitle lang-en">Senior Software Engineer · Mobile Specialist & Technical SEO</p>
+        </div>
+      </div>
+      
+      <!-- Language Selector -->
+      <div class="lang-selector">
+        <button id="btn-es" class="lang-btn active" onclick="setLanguage('es')">ES</button>
+        <button id="btn-en" class="lang-btn" onclick="setLanguage('en')">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="profile-card">
+        <div class="avatar-container">
+          <img src="assets/victor-profile.png" alt="Víctor Alonso" onerror="this.src='https://placehold.co/180x180/1a1a2e/ffffff?text=VA'">
+          <div class="avatar-ring"></div>
+        </div>
+        <div class="profile-info">
+          <div class="badge-container">
+            <span class="badge"><i class="fa-solid fa-code"></i> Android / FullStack</span>
+            <span class="badge"><i class="fa-solid fa-chart-line"></i> Technical SEO</span>
+          </div>
+          
+          <h2 class="lang-es">Sistema de Currículum Vítae Segmentado</h2>
+          <h2 class="lang-en">Segmented Resume & CV Portfolio</h2>
+          
+          <p class="hero-desc lang-es">
+            Ingeniería de software de alto nivel con más de 15 años de experiencia. Este portal te permite descargar la versión estratégica de mi currículum que mejor se adapte al canal de candidatura o tipo de proyecto.
+          </p>
+          <p class="hero-desc lang-en">
+            High-level software engineering with over 15 years of experience. This portal allows you to download the strategic version of my CV that best fits your candidate channel or project type.
+          </p>
+          
+          <div class="social-links">
+            <a href="https://github.com/vicksWalkiria" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/victoralonsogomez" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://victor-alonso.es" target="_blank" aria-label="Personal Website"><i class="fa-solid fa-globe"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grid de Perfiles -->
+    <section class="grid-section">
+      <h3 class="section-title lang-es">Selecciona el Perfil Profesional</h3>
+      <h3 class="section-title lang-en">Select the Professional Profile</h3>
+      
+      <div class="cards-grid">
+        
+        <!-- CARD 1: ANDROID -->
+        <div class="card premium-card">
+          <div class="card-glow"></div>
+          <div class="card-icon"><i class="fa-brands fa-android"></i></div>
+          
+          <h4 class="lang-es">Senior Android Specialist</h4>
+          <h4 class="lang-en">Senior Android Specialist</h4>
+          
+          <p class="card-tagline lang-es">Ingeniería Móvil & Arquitecturas Robustas</p>
+          <p class="card-tagline lang-en">Mobile Engineering & Robust Architectures</p>
+          
+          <p class="card-desc lang-es">
+            Enfocado en desarrollo nativo con Kotlin/Java, arquitecturas limpias (Clean Architecture, MVVM/MVI) y desarrollo de alto rendimiento. Ideal para equipos técnicos especializados y startups móviles de alta tecnología.
+          </p>
+          <p class="card-desc lang-en">
+            Focused on native development with Kotlin/Java, Clean Architecture (MVVM/MVI), and high-performance engineering. Ideal for specialized tech teams and high-growth mobile startups.
+          </p>
+          
+          <div class="tech-tags">
+            <span>Kotlin</span>
+            <span>Android SDK</span>
+            <span>MVVM / MVI</span>
+            <span>Clean Architecture</span>
+            <span>Jetpack Compose</span>
+          </div>
+          
+          <div class="card-actions">
+            <a href="dist/cv-victor-android-es.pdf" target="_blank" class="action-btn pdf-btn lang-es"><i class="fa-solid fa-file-pdf"></i> Ver PDF (ES)</a>
+            <a href="dist/cv-victor-android-en.pdf" target="_blank" class="action-btn pdf-btn lang-en"><i class="fa-solid fa-file-pdf"></i> View PDF (EN)</a>
+            
+            <a href="dist/cv-victor-android-es.pdf" download class="action-btn download-btn lang-es" aria-label="Descargar PDF Android Español"><i class="fa-solid fa-download"></i></a>
+            <a href="dist/cv-victor-android-en.pdf" download class="action-btn download-btn lang-en" aria-label="Download PDF Android English"><i class="fa-solid fa-download"></i></a>
+          </div>
+        </div>
+
+        <!-- CARD 2: FULLSTACK & SEO -->
+        <div class="card premium-card">
+          <div class="card-glow"></div>
+          <div class="card-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          
+          <h4 class="lang-es">FullStack & Technical SEO</h4>
+          <h4 class="lang-en">FullStack & Technical SEO</h4>
+          
+          <p class="card-tagline lang-es">Optimización WPO, Laravel & WordPress</p>
+          <p class="card-tagline lang-en">WPO Optimization, Laravel & WordPress</p>
+          
+          <p class="card-desc lang-es">
+            Desarrollo web a medida con fuerte enfoque en indexabilidad avanzada, rendimiento de carga extremo (WPO), auditorías de logs e infraestructura de servidores. Recomendado para e-commerce, agencias SEO y desarrollos a medida.
+          </p>
+          <p class="card-desc lang-en">
+            Custom web development with a strong focus on advanced search indexability, extreme performance optimization (WPO), log auditing, and infrastructure. Perfect for e-commerce, SEO agencies, and bespoke web apps.
+          </p>
+          
+          <div class="tech-tags">
+            <span>PHP / Laravel</span>
+            <span>WordPress</span>
+            <span>WPO</span>
+            <span>Technical SEO</span>
+            <span>MySQL</span>
+          </div>
+          
+          <div class="card-actions">
+            <a href="dist/cv-victor-fullstack-seo-es.pdf" target="_blank" class="action-btn pdf-btn lang-es"><i class="fa-solid fa-file-pdf"></i> Ver PDF (ES)</a>
+            <a href="dist/cv-victor-fullstack-seo-en.pdf" target="_blank" class="action-btn pdf-btn lang-en"><i class="fa-solid fa-file-pdf"></i> View PDF (EN)</a>
+            
+            <a href="dist/cv-victor-fullstack-seo-es.pdf" download class="action-btn download-btn lang-es" aria-label="Descargar PDF FullStack Español"><i class="fa-solid fa-download"></i></a>
+            <a href="dist/cv-victor-fullstack-seo-en.pdf" download class="action-btn download-btn lang-en" aria-label="Download PDF FullStack English"><i class="fa-solid fa-download"></i></a>
+          </div>
+        </div>
+
+        <!-- CARD 3: ATS FRIENDLY -->
+        <div class="card ats-card">
+          <div class="card-glow"></div>
+          <div class="card-icon"><i class="fa-solid fa-robot"></i></div>
+          
+          <h4 class="lang-es">Unified ATS-Friendly</h4>
+          <h4 class="lang-en">Unified ATS-Friendly</h4>
+          
+          <p class="card-tagline lang-es">Optimizado para Filtros Automáticos</p>
+          <p class="card-tagline lang-en">Optimized for Automatic HR Screeners</p>
+          
+          <p class="card-desc lang-es">
+            Diseño lineal simplificado a una columna, sin tablas ni elementos gráficos que confundan a los robots de RRHH (ATS). Agrupa toda la experiencia (Android + Web + SEO). Altamente recomendado para portales de empleo (LinkedIn, InfoJobs, etc.).
+          </p>
+          <p class="card-desc lang-en">
+            Simplified single-column format, without tables or graphical items that could confuse automated HR screeners (ATS). Combines all experience (Android + Web + SEO). Highly recommended for job portals (LinkedIn, etc.).
+          </p>
+          
+          <div class="tech-tags">
+            <span>ATS-Tested</span>
+            <span>Single Column</span>
+            <span>High Compatibility</span>
+            <span>Plain Layout</span>
+          </div>
+          
+          <div class="card-actions">
+            <a href="dist/cv-victor-ats-es.pdf" target="_blank" class="action-btn pdf-btn lang-es"><i class="fa-solid fa-file-pdf"></i> Ver PDF (ES)</a>
+            <a href="dist/cv-victor-ats-en.pdf" target="_blank" class="action-btn pdf-btn lang-en"><i class="fa-solid fa-file-pdf"></i> View PDF (EN)</a>
+            
+            <a href="dist/cv-victor-ats-es.pdf" download class="action-btn download-btn lang-es" aria-label="Descargar PDF ATS Español"><i class="fa-solid fa-download"></i></a>
+            <a href="dist/cv-victor-ats-en.pdf" download class="action-btn download-btn lang-en" aria-label="Download PDF ATS English"><i class="fa-solid fa-download"></i></a>
+          </div>
+        </div>
+
+        <!-- CARD 4: LLM AI -->
+        <div class="card ai-card">
+          <div class="card-glow"></div>
+          <div class="card-icon"><i class="fa-solid fa-brain"></i></div>
+          
+          <h4 class="lang-es">AI-Optimized (LLMs)</h4>
+          <h4 class="lang-en">AI-Optimized (LLMs)</h4>
+          
+          <p class="card-tagline lang-es">Formato Markdown para ChatGPT & Claude</p>
+          <p class="card-tagline lang-en">Markdown Format for ChatGPT & Claude</p>
+          
+          <p class="card-desc lang-es">
+            Estructurado en texto plano Markdown limpio. Diseñado específicamente para que reclutadores o tú mismo podáis copiarlo y pegarlo directamente en modelos de lenguaje (ChatGPT, Claude, Gemini) sin ruido ni pérdidas de formato.
+          </p>
+          <p class="card-desc lang-en">
+            Structured in clean plain Markdown text. Specifically crafted so recruiters or you can copy-paste it directly into Large Language Models (ChatGPT, Claude, Gemini) with zero layout noise or token waste.
+          </p>
+          
+          <div class="tech-tags">
+            <span>Markdown</span>
+            <span>LLM-Ready</span>
+            <span>Token-Optimized</span>
+            <span>Clipboard Copy</span>
+          </div>
+          
+          <div class="card-actions-ai">
+            <div class="card-actions">
+              <a href="dist/cv-victor-llm-es.md" target="_blank" class="action-btn pdf-btn lang-es"><i class="fa-regular fa-file-code"></i> Ver Markdown (ES)</a>
+              <a href="dist/cv-victor-llm-en.md" target="_blank" class="action-btn pdf-btn lang-en"><i class="fa-regular fa-file-code"></i> View Markdown (EN)</a>
+            </div>
+            
+            <button onclick="copyToClipboard('es', this)" class="action-btn copy-btn lang-es">
+              <span class="btn-text"><i class="fa-regular fa-copy"></i> Copiar CV para IA</span>
+            </button>
+            <button onclick="copyToClipboard('en', this)" class="action-btn copy-btn lang-en">
+              <span class="btn-text"><i class="fa-regular fa-copy"></i> Copy CV for AI</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-container">
+      <p class="lang-es">&copy; 2026 Víctor Alonso. Generación de CVs automatizada mediante XeLaTeX & GitHub Actions.</p>
+      <p class="lang-en">&copy; 2026 Víctor Alonso. Automated CV Generation via XeLaTeX & GitHub Actions.</p>
+      <div class="footer-meta">
+        <a href="https://github.com/vicksWalkiria/cv-victor" target="_blank"><i class="fa-solid fa-code-fork"></i> Source Code</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Translation & Copy Script -->
+  <script>
+    // Set language on body
+    function setLanguage(lang) {
+      document.body.className = lang;
+      document.documentElement.lang = lang;
+      
+      // Update active states on buttons
+      document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+      document.getElementById('btn-' + lang).classList.add('active');
+      
+      // Save user preference
+      localStorage.setItem('cv-lang', lang);
+    }
+    
+    // Auto-load preference or default to browser language
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedLang = localStorage.getItem('cv-lang');
+      if (savedLang === 'es' || savedLang === 'en') {
+        setLanguage(savedLang);
+      } else {
+        const browserLang = navigator.language || navigator.userLanguage;
+        if (browserLang.startsWith('en')) {
+          setLanguage('en');
+        } else {
+          setLanguage('es');
+        }
+      }
+    });
+
+    // Copy to clipboard from Markdown file
+    async function copyToClipboard(lang, buttonEl) {
+      const originalText = buttonEl.querySelector('.btn-text').innerHTML;
+      const filePath = 'dist/cv-victor-llm-' + lang + '.md';
+      
+      try {
+        buttonEl.disabled = true;
+        buttonEl.querySelector('.btn-text').innerHTML = lang === 'es' 
+          ? '<i class="fa-solid fa-circle-notch fa-spin"></i> Obteniendo CV...' 
+          : '<i class="fa-solid fa-circle-notch fa-spin"></i> Fetching CV...';
+          
+        const response = await fetch(filePath);
+        if (!response.ok) {
+          throw new Error('Network error');
+        }
+        
+        const markdownText = await response.text();
+        
+        await navigator.clipboard.writeText(markdownText);
+        
+        buttonEl.classList.add('success');
+        buttonEl.querySelector('.btn-text').innerHTML = lang === 'es'
+          ? '<i class="fa-solid fa-check"></i> ¡Copiado con éxito!'
+          : '<i class="fa-solid fa-check"></i> Copied successfully!';
+          
+      } catch (err) {
+        console.error('Error copying text:', err);
+        buttonEl.classList.add('error');
+        buttonEl.querySelector('.btn-text').innerHTML = lang === 'es'
+          ? '<i class="fa-solid fa-triangle-exclamation"></i> Error al copiar'
+          : '<i class="fa-solid fa-triangle-exclamation"></i> Copy failed';
+      } finally {
+        setTimeout(() => {
+          buttonEl.disabled = false;
+          buttonEl.classList.remove('success', 'error');
+          buttonEl.querySelector('.btn-text').innerHTML = originalText;
+        }, 2500);
+      }
+    }
+  </script>
+</body>
+</html>
