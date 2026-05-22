@@ -30,10 +30,15 @@ jobs:
 
       - name: Install Fira Sans Font
         run: |
-          curl -L -o fira-sans.zip "https://fonts.google.com/download?family=Fira%20Sans"
-          unzip fira-sans.zip -d fira-sans
           mkdir -p ~/.local/share/fonts
-          cp fira-sans/*.ttf ~/.local/share/fonts/
+          curl -L -o ~/.local/share/fonts/FiraSans-Book.otf https://github.com/mozilla/Fira/raw/master/otf/FiraSans-Book.otf
+          curl -L -o ~/.local/share/fonts/FiraSans-BookItalic.otf https://github.com/mozilla/Fira/raw/master/otf/FiraSans-BookItalic.otf
+          curl -L -o ~/.local/share/fonts/FiraSans-Medium.otf https://github.com/mozilla/Fira/raw/master/otf/FiraSans-Medium.otf
+          curl -L -o ~/.local/share/fonts/FiraSans-MediumItalic.otf https://github.com/mozilla/Fira/raw/master/otf/FiraSans-MediumItalic.otf
+          curl -L -o ~/.local/share/fonts/FiraSans-Regular.otf https://github.com/mozilla/Fira/raw/master/otf/FiraSans-Regular.otf
+          curl -L -o ~/.local/share/fonts/FiraSans-RegularItalic.otf https://github.com/mozilla/Fira/raw/master/otf/FiraSans-RegularItalic.otf
+          curl -L -o ~/.local/share/fonts/FiraSans-Bold.otf https://github.com/mozilla/Fira/raw/master/otf/FiraSans-Bold.otf
+          curl -L -o ~/.local/share/fonts/FiraSans-BoldItalic.otf https://github.com/mozilla/Fira/raw/master/otf/FiraSans-BoldItalic.otf
           fc-cache -f -v
 
       - name: Compile Resumes
