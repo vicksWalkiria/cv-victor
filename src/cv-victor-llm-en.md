@@ -115,7 +115,7 @@ Victor is a Senior Software Engineer and Technical Consultant with 15+ years of 
 
 ### 1. B.S. in Computer Engineering (University of Castilla-La Mancha)
 *   **Degree:** B.S. in Computer Engineering (Ingeniería en Informática) from the Superior School of Computer Engineering of Albacete (UCLM).
-*   **Details:** Official degree covering software engineering, system architecture, database design, and advanced algorithms.
+*   **Details:** Official degree covering software engineering, system architecture, database design, and advanced algorithms. Includes academic exchanges/stays at Fachhochschule Trier (Germany) and the Faculty of Computer Science of the University of Granada.
 
 ### 2. University of Castilla-La Mancha (UCLM) (2025 -- 2026)
 *   **Role:** Substitute Lecturer & Guest Speaker

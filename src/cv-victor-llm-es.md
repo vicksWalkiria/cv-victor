@@ -115,7 +115,7 @@ Víctor es Desarrollador de Software Sénior y Consultor Técnico con más de 15
 
 ### 1. Ingeniería en Informática (Universidad de Castilla-La Mancha)
 *   **Título:** Ingeniero Informático por la Escuela Superior de Ingeniería Informática de Albacete (UCLM).
-*   **Detalles:** Título oficial de Ingeniería en Informática con sólida formación en ingeniería de software, arquitectura de sistemas y bases de datos.
+*   **Detalles:** Título oficial de Ingeniería en Informática con sólida formación en ingeniería de software, arquitectura de sistemas y bases de datos. Incluye estancias académicas de intercambio en Fachhochschule Trier (Alemania) y en la Facultad de Informática de la Universidad de Granada.
 
 ### 2. Universidad de Castilla-La Mancha (UCLM) (2025 -- 2026)
 *   **Cargo:** Profesor sustituto y Conferenciante
