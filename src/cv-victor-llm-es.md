@@ -111,14 +111,18 @@ Víctor es Desarrollador de Software Sénior y Consultor Técnico con más de 15
 
 ---
 
-## 🎓 Docencia y Formación Académica
+## 🎓 Educación, Docencia y Formación Académica
 
-### 1. Universidad de Castilla-La Mancha (UCLM) (2025 -- 2026)
+### 1. Ingeniería en Informática (Universidad de Castilla-La Mancha)
+*   **Título:** Ingeniero Informático por la Escuela Superior de Ingeniería Informática de Albacete (UCLM).
+*   **Detalles:** Título oficial de Ingeniería en Informática con sólida formación en ingeniería de software, arquitectura de sistemas y bases de datos.
+
+### 2. Universidad de Castilla-La Mancha (UCLM) (2025 -- 2026)
 *   **Cargo:** Profesor sustituto y Conferenciante
 *   **Hitos Clave:**
     *   Docencia en la Escuela Superior de Ingeniería Informática de Albacete (ESII), impartiendo clases en las asignaturas de: *Bases de Datos*, *Metodología de la Programación* y *Sistemas Basados en Conocimiento* en el Grado Oficial de Ingeniería Informática.
 
-### 2. Formador Técnico & Tutor Tecnológico (Enero 2018 -- Actualidad)
+### 3. Formador Técnico & Tutor Tecnológico (Enero 2018 -- Actualidad)
 *   **Cargo:** Formador Autónomo
 *   **Hitos Clave:**
     *   Diseño del plan formativo e impartición de cursos tecnológicos avanzados para programadores (incluyendo un Curso intensivo de 300 horas en Java SE y Android para ingenieros y técnicos de Telefónica).

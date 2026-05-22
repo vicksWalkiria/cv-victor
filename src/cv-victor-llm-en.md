@@ -111,14 +111,18 @@ Victor is a Senior Software Engineer and Technical Consultant with 15+ years of 
 
 ---
 
-## 🎓 Lecturing & Academic Background
+## 🎓 Education, Lecturing & Academic Background
 
-### 1. University of Castilla-La Mancha (UCLM) (2025 -- 2026)
+### 1. B.S. in Computer Engineering (University of Castilla-La Mancha)
+*   **Degree:** B.S. in Computer Engineering (Ingeniería en Informática) from the Superior School of Computer Engineering of Albacete (UCLM).
+*   **Details:** Official degree covering software engineering, system architecture, database design, and advanced algorithms.
+
+### 2. University of Castilla-La Mancha (UCLM) (2025 -- 2026)
 *   **Role:** Substitute Lecturer & Guest Speaker
 *   **Key Milestones:**
     *   Taught in the Superior School of Computer Science of Albacete (ESII), delivering lectures and practical classes in: *Databases*, *Programming Methodology*, and *Knowledge-Based Systems* inside the official Computer Science Degree.
 
-### 2. Technical Trainer & Academic Advisor (January 2018 -- Present)
+### 3. Technical Trainer & Academic Advisor (January 2018 -- Present)
 *   **Role:** Freelance Technical Instructor
 *   **Key Milestones:**
     *   Designed training syllabus and delivered corporate courses (including a 300-hour Java SE & Android course for engineers at Telefónica).
