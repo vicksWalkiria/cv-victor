@@ -52,9 +52,7 @@ Víctor es Desarrollador de Software Sénior y Consultor Técnico con más de 15
 
 ### 1. Aplicaciones Android Publicadas
 *   **Descripción:** Desarrollo nativo (Kotlin/Java) y arquitectura MVVM publicado en el perfil oficial [Google Play Developer](https://play.google.com/store/apps/dev?id=4633874941646419208).
-*   **Aplicaciones Destacadas:**
-    *   [Precio Gasolineras España](https://play.google.com/store/apps/details?id=com.walkiriaapps.topgasolineras): +100k descargas, Room DB, servicios en segundo plano de sincronización automática de precios de combustibles y APIs REST.
-    *   *Memotron*: +10k descargas, base de datos local Room, entrenamiento mental y monetización integrada.
+*   **Aplicación Destacada:** [Precio Gasolineras España](https://play.google.com/store/apps/details?id=com.walkiriaapps.topgasolineras): +1000 descargas, Room DB, servicios en segundo plano de sincronización automática de precios de combustibles y APIs REST.
 
 ### 2. Resolutor de Incidencias Críticas ("Bombero Tecnológico")
 *   **Descripción:** Intervención directa en proyectos heredados o atascados en fase de lanzamiento para Startups y PYMEs.
@@ -81,7 +79,7 @@ Víctor es Desarrollador de Software Sénior y Consultor Técnico con más de 15
 *   **Cargo:** Co-Founder & Android Developer
 *   **Responsabilidades:** Dirección tecnológica móvil y desarrollo nativo Android.
 *   **Hitos Clave:**
-    *   Desarrollo nativo de la aplicación *Memotron* y diseño de la arquitectura móvil para múltiples aplicaciones corporativas de alto rendimiento.
+    *   Dirección tecnológica móvil y diseño de la arquitectura para múltiples aplicaciones Android nativas corporativas.
 
 ### 3. Salumedia (Julio 2018 -- Marzo 2020)
 *   **Cargo:** Senior Software Development Engineer

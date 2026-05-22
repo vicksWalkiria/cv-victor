@@ -52,9 +52,7 @@ Victor is a Senior Software Engineer and Technical Consultant with 15+ years of 
 
 ### 1. Published Android Applications
 *   **Description:** Native mobile development (Kotlin/Java) and MVVM architecture, published on my official [Google Play Developer Profile](https://play.google.com/store/apps/dev?id=4633874941646419208).
-*   **Featured Apps:**
-    *   [Precio Gasolineras España](https://play.google.com/store/apps/details?id=com.walkiriaapps.topgasolineras): +100k downloads, Room DB, background services for automated fuel price synchronization, and REST APIs.
-    *   *Memotron*: +10k downloads, Room local database, mental training app with active monetization.
+*   **Featured App:** [Precio Gasolineras España](https://play.google.com/store/apps/details?id=com.walkiriaapps.topgasolineras): +1000 downloads, Room DB, background services for automated fuel price synchronization, and REST APIs.
 
 ### 2. Critical Issue Resolution ("Technical Firefighter")
 *   **Description:** Hands-on emergency intervention in legacy or stalled release-phase projects for Startups and SMEs.
@@ -81,7 +79,7 @@ Victor is a Senior Software Engineer and Technical Consultant with 15+ years of 
 *   **Role:** Co-Founder & Android Developer
 *   **Responsibilities:** Mobile technological direction and native Android development.
 *   **Key Milestones:**
-    *   Native development of the *Memotron* Android app and designed scalable mobile architectures for high-performance corporate applications.
+    *   Mobile technological direction and designed scalable mobile architectures for high-performance native corporate applications.
 
 ### 3. Salumedia (July 2018 -- March 2020)
 *   **Role:** Senior Software Development Engineer
