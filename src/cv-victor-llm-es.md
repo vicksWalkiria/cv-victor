@@ -11,7 +11,7 @@
 ---
 
 ## 👤 Perfil Ejecutivo
-Víctor es Desarrollador de Software Sénior y Consultor Técnico con más de 15 años de trayectoria profesional. Combina una altísima especialización en **desarrollo nativo Android (Kotlin/Java)** con un perfil polivalente de **desarrollador FullStack (PHP/Laravel/WordPress)** y **Consultor de SEO Técnico Avanzado y WPO (Web Performance Optimization)**. Es reconocido por su habilidad para resolver "marrones" e incidencias críticas en entornos reales de producción, optimizar pipelines de compilación y coordinar formaciones tecnológicas corporativas de alto impacto.
+Víctor es Desarrollador de Software Sénior y Consultor Técnico con más de 15 años de trayectoria profesional. Combina una altísima especialización en **desarrollo nativo Android (Kotlin/Java)** con un perfil polivalente de **desarrollador FullStack (PHP/Laravel/WordPress)** y **Consultor de SEO Técnico Avanzado y WPO (Web Performance Optimization)**. Es reconocido por su habilidad para desbloquear proyectos complejos, resolver incidencias críticas en entornos reales de producción, optimizar pipelines de compilación y coordinar formaciones tecnológicas corporativas de alto impacto.
 
 ---
 

@@ -11,7 +11,7 @@
 ---
 
 ## 👤 Executive Profile
-Victor is a Senior Software Engineer and Technical Consultant with 15+ years of professional experience. He combines a high degree of specialization in **native Android development (Kotlin/Java)** with a versatile **FullStack web development (PHP/Laravel/WordPress)** background and advanced **Technical SEO & WPO (Web Performance Optimization) Consulting**. He is widely recognized for his ability to debug "fire drills" and critical issues in real production environments, optimize compilation pipelines, and lead high-impact corporate technological training programs.
+Victor is a Senior Software Engineer and Technical Consultant with 15+ years of professional experience. He combines a high degree of specialization in **native Android development (Kotlin/Java)** with a versatile **FullStack web development (PHP/Laravel/WordPress)** background and advanced **Technical SEO & WPO (Web Performance Optimization) Consulting**. He is widely recognized for his ability to unlock complex projects, resolve critical issues in real production environments, optimize compilation pipelines, and lead high-impact corporate technological training programs.
 
 ---
 
