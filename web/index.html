@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Víctor Alonso | Portfolio & CV Selector</title>
-  <meta name="description" content="Portal oficial de currículums de Víctor Alonso - Senior Software Engineer, Android Specialist & Technical SEO. Accede y descarga las versiones premium y ATS-friendly en español e inglés.">
+  <title>Víctor Alonso | Senior Software Engineer & Technical SEO</title>
+  <meta name="description" content="Currículum Vítae Web de Víctor Alonso - Senior Software Engineer con más de 15 años de experiencia en Android nativo, desarrollo FullStack y consultoría de SEO técnico.">
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,6 +25,7 @@
     <div class="glow-2"></div>
   </div>
 
+  <!-- Header -->
   <header class="main-header">
     <div class="header-container">
       <div class="brand">
@@ -36,204 +37,563 @@
         </div>
       </div>
       
-      <!-- Language Selector -->
-      <div class="lang-selector">
-        <button id="btn-es" class="lang-btn active" onclick="setLanguage('es')">ES</button>
-        <button id="btn-en" class="lang-btn" onclick="setLanguage('en')">EN</button>
+      <!-- Actions Bar (Lang + PDF Download Center) -->
+      <div class="header-actions">
+        <!-- Language Selector -->
+        <div class="lang-selector">
+          <button id="btn-es" class="lang-btn active" onclick="setLanguage('es')">ES</button>
+          <button id="btn-en" class="lang-btn" onclick="setLanguage('en')">EN</button>
+        </div>
+        
+        <!-- Dropdown Download CV -->
+        <div class="download-dropdown">
+          <button class="action-btn download-trigger" onclick="toggleDropdown()">
+            <i class="fa-solid fa-file-arrow-down"></i> 
+            <span class="lang-es">Descargar CV</span>
+            <span class="lang-en">Download CV</span>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+          </button>
+          <div id="cv-dropdown-menu" class="dropdown-menu">
+            <div class="dropdown-header">
+              <span class="lang-es">Selecciona una versión PDF</span>
+              <span class="lang-en">Select a PDF Version</span>
+            </div>
+            
+            <a href="dist/cv-victor-android-es.pdf" target="_blank" class="dropdown-item lang-es">
+              <i class="fa-brands fa-android"></i> Android Specialist (ES)
+            </a>
+            <a href="dist/cv-victor-android-en.pdf" target="_blank" class="dropdown-item lang-en">
+              <i class="fa-brands fa-android"></i> Android Specialist (EN)
+            </a>
+            
+            <a href="dist/cv-victor-fullstack-seo-es.pdf" target="_blank" class="dropdown-item lang-es">
+              <i class="fa-solid fa-laptop-code"></i> FullStack & SEO (ES)
+            </a>
+            <a href="dist/cv-victor-fullstack-seo-en.pdf" target="_blank" class="dropdown-item lang-en">
+              <i class="fa-solid fa-laptop-code"></i> FullStack & SEO (EN)
+            </a>
+            
+            <a href="dist/cv-victor-ats-es.pdf" target="_blank" class="dropdown-item lang-es">
+              <i class="fa-solid fa-robot"></i> ATS-Friendly (ES)
+            </a>
+            <a href="dist/cv-victor-ats-en.pdf" target="_blank" class="dropdown-item lang-en">
+              <i class="fa-solid fa-robot"></i> ATS-Friendly (EN)
+            </a>
+            
+            <div class="dropdown-divider"></div>
+            
+            <button onclick="copyToClipboard('es', this)" class="dropdown-item copy-item lang-es">
+              <i class="fa-regular fa-copy"></i> <span class="btn-text">Copiar CV para IA (ES)</span>
+            </button>
+            <button onclick="copyToClipboard('en', this)" class="dropdown-item copy-item lang-en">
+              <i class="fa-regular fa-copy"></i> <span class="btn-text">Copy CV for AI (EN)</span>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </header>
 
-  <main class="main-content">
+  <!-- Content Layout -->
+  <main class="cv-layout">
     
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="profile-card">
-        <div class="avatar-container">
+    <!-- Left Sidebar: Profile Details -->
+    <aside class="cv-sidebar">
+      <div class="profile-avatar-card">
+        <div class="avatar-wrapper">
           <img src="assets/victor-profile.png" alt="Víctor Alonso" onerror="this.src='https://placehold.co/180x180/1a1a2e/ffffff?text=VA'">
           <div class="avatar-ring"></div>
         </div>
-        <div class="profile-info">
-          <div class="badge-container">
-            <span class="badge"><i class="fa-solid fa-code"></i> Android / FullStack</span>
-            <span class="badge"><i class="fa-solid fa-chart-line"></i> Technical SEO</span>
-          </div>
-          
-          <h2 class="lang-es">Sistema de Currículum Vítae Segmentado</h2>
-          <h2 class="lang-en">Segmented Resume & CV Portfolio</h2>
-          
-          <p class="hero-desc lang-es">
-            Ingeniería de software de alto nivel con más de 15 años de experiencia. Este portal te permite descargar la versión estratégica de mi currículum que mejor se adapte al canal de candidatura o tipo de proyecto.
-          </p>
-          <p class="hero-desc lang-en">
-            High-level software engineering with over 15 years of experience. This portal allows you to download the strategic version of my CV that best fits your candidate channel or project type.
-          </p>
-          
-          <div class="social-links">
-            <a href="https://github.com/vicksWalkiria" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-            <a href="https://linkedin.com/in/victoralonsogomez" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://victor-alonso.es" target="_blank" aria-label="Personal Website"><i class="fa-solid fa-globe"></i></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Grid de Perfiles -->
-    <section class="grid-section">
-      <h3 class="section-title lang-es">Selecciona el Perfil Profesional</h3>
-      <h3 class="section-title lang-en">Select the Professional Profile</h3>
-      
-      <div class="cards-grid">
         
-        <!-- CARD 1: ANDROID -->
-        <div class="card premium-card">
-          <div class="card-glow"></div>
-          <div class="card-icon"><i class="fa-brands fa-android"></i></div>
-          
-          <h4 class="lang-es">Senior Android Specialist</h4>
-          <h4 class="lang-en">Senior Android Specialist</h4>
-          
-          <p class="card-tagline lang-es">Ingeniería Móvil & Arquitecturas Robustas</p>
-          <p class="card-tagline lang-en">Mobile Engineering & Robust Architectures</p>
-          
-          <p class="card-desc lang-es">
-            Enfocado en desarrollo nativo con Kotlin/Java, arquitecturas limpias (Clean Architecture, MVVM/MVI) y desarrollo de alto rendimiento. Ideal para equipos técnicos especializados y startups móviles de alta tecnología.
-          </p>
-          <p class="card-desc lang-en">
-            Focused on native development with Kotlin/Java, Clean Architecture (MVVM/MVI), and high-performance engineering. Ideal for specialized tech teams and high-growth mobile startups.
-          </p>
-          
-          <div class="tech-tags">
-            <span>Kotlin</span>
-            <span>Android SDK</span>
-            <span>MVVM / MVI</span>
-            <span>Clean Architecture</span>
-            <span>Jetpack Compose</span>
-          </div>
-          
-          <div class="card-actions">
-            <a href="dist/cv-victor-android-es.pdf" target="_blank" class="action-btn pdf-btn lang-es"><i class="fa-solid fa-file-pdf"></i> Ver PDF (ES)</a>
-            <a href="dist/cv-victor-android-en.pdf" target="_blank" class="action-btn pdf-btn lang-en"><i class="fa-solid fa-file-pdf"></i> View PDF (EN)</a>
-            
-            <a href="dist/cv-victor-android-es.pdf" download class="action-btn download-btn lang-es" aria-label="Descargar PDF Android Español"><i class="fa-solid fa-download"></i></a>
-            <a href="dist/cv-victor-android-en.pdf" download class="action-btn download-btn lang-en" aria-label="Download PDF Android English"><i class="fa-solid fa-download"></i></a>
-          </div>
+        <h2 class="profile-name">Víctor Alonso</h2>
+        <p class="profile-role lang-es">Senior Software Engineer & Consultor SEO Técnico</p>
+        <p class="profile-role lang-en">Senior Software Engineer & Tech SEO Consultant</p>
+        
+        <div class="profile-location">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Albacete, España</span>
         </div>
-
-        <!-- CARD 2: FULLSTACK & SEO -->
-        <div class="card premium-card">
-          <div class="card-glow"></div>
-          <div class="card-icon"><i class="fa-solid fa-laptop-code"></i></div>
-          
-          <h4 class="lang-es">FullStack & Technical SEO</h4>
-          <h4 class="lang-en">FullStack & Technical SEO</h4>
-          
-          <p class="card-tagline lang-es">Optimización WPO, Laravel & WordPress</p>
-          <p class="card-tagline lang-en">WPO Optimization, Laravel & WordPress</p>
-          
-          <p class="card-desc lang-es">
-            Desarrollo web a medida con fuerte enfoque en indexabilidad avanzada, rendimiento de carga extremo (WPO), auditorías de logs e infraestructura de servidores. Recomendado para e-commerce, agencias SEO y desarrollos a medida.
-          </p>
-          <p class="card-desc lang-en">
-            Custom web development with a strong focus on advanced search indexability, extreme performance optimization (WPO), log auditing, and infrastructure. Perfect for e-commerce, SEO agencies, and bespoke web apps.
-          </p>
-          
-          <div class="tech-tags">
-            <span>PHP / Laravel</span>
-            <span>WordPress</span>
-            <span>WPO</span>
-            <span>Technical SEO</span>
-            <span>MySQL</span>
-          </div>
-          
-          <div class="card-actions">
-            <a href="dist/cv-victor-fullstack-seo-es.pdf" target="_blank" class="action-btn pdf-btn lang-es"><i class="fa-solid fa-file-pdf"></i> Ver PDF (ES)</a>
-            <a href="dist/cv-victor-fullstack-seo-en.pdf" target="_blank" class="action-btn pdf-btn lang-en"><i class="fa-solid fa-file-pdf"></i> View PDF (EN)</a>
-            
-            <a href="dist/cv-victor-fullstack-seo-es.pdf" download class="action-btn download-btn lang-es" aria-label="Descargar PDF FullStack Español"><i class="fa-solid fa-download"></i></a>
-            <a href="dist/cv-victor-fullstack-seo-en.pdf" download class="action-btn download-btn lang-en" aria-label="Download PDF FullStack English"><i class="fa-solid fa-download"></i></a>
-          </div>
-        </div>
-
-        <!-- CARD 3: ATS FRIENDLY -->
-        <div class="card ats-card">
-          <div class="card-glow"></div>
-          <div class="card-icon"><i class="fa-solid fa-robot"></i></div>
-          
-          <h4 class="lang-es">Unified ATS-Friendly</h4>
-          <h4 class="lang-en">Unified ATS-Friendly</h4>
-          
-          <p class="card-tagline lang-es">Optimizado para Filtros Automáticos</p>
-          <p class="card-tagline lang-en">Optimized for Automatic HR Screeners</p>
-          
-          <p class="card-desc lang-es">
-            Diseño lineal simplificado a una columna, sin tablas ni elementos gráficos que confundan a los robots de RRHH (ATS). Agrupa toda la experiencia (Android + Web + SEO). Altamente recomendado para portales de empleo (LinkedIn, InfoJobs, etc.).
-          </p>
-          <p class="card-desc lang-en">
-            Simplified single-column format, without tables or graphical items that could confuse automated HR screeners (ATS). Combines all experience (Android + Web + SEO). Highly recommended for job portals (LinkedIn, etc.).
-          </p>
-          
-          <div class="tech-tags">
-            <span>ATS-Tested</span>
-            <span>Single Column</span>
-            <span>High Compatibility</span>
-            <span>Plain Layout</span>
-          </div>
-          
-          <div class="card-actions">
-            <a href="dist/cv-victor-ats-es.pdf" target="_blank" class="action-btn pdf-btn lang-es"><i class="fa-solid fa-file-pdf"></i> Ver PDF (ES)</a>
-            <a href="dist/cv-victor-ats-en.pdf" target="_blank" class="action-btn pdf-btn lang-en"><i class="fa-solid fa-file-pdf"></i> View PDF (EN)</a>
-            
-            <a href="dist/cv-victor-ats-es.pdf" download class="action-btn download-btn lang-es" aria-label="Descargar PDF ATS Español"><i class="fa-solid fa-download"></i></a>
-            <a href="dist/cv-victor-ats-en.pdf" download class="action-btn download-btn lang-en" aria-label="Download PDF ATS English"><i class="fa-solid fa-download"></i></a>
-          </div>
-        </div>
-
-        <!-- CARD 4: LLM AI -->
-        <div class="card ai-card">
-          <div class="card-glow"></div>
-          <div class="card-icon"><i class="fa-solid fa-brain"></i></div>
-          
-          <h4 class="lang-es">AI-Optimized (LLMs)</h4>
-          <h4 class="lang-en">AI-Optimized (LLMs)</h4>
-          
-          <p class="card-tagline lang-es">Formato Markdown para ChatGPT & Claude</p>
-          <p class="card-tagline lang-en">Markdown Format for ChatGPT & Claude</p>
-          
-          <p class="card-desc lang-es">
-            Estructurado en texto plano Markdown limpio. Diseñado específicamente para que reclutadores o tú mismo podáis copiarlo y pegarlo directamente en modelos de lenguaje (ChatGPT, Claude, Gemini) sin ruido ni pérdidas de formato.
-          </p>
-          <p class="card-desc lang-en">
-            Structured in clean plain Markdown text. Specifically crafted so recruiters or you can copy-paste it directly into Large Language Models (ChatGPT, Claude, Gemini) with zero layout noise or token waste.
-          </p>
-          
-          <div class="tech-tags">
-            <span>Markdown</span>
-            <span>LLM-Ready</span>
-            <span>Token-Optimized</span>
-            <span>Clipboard Copy</span>
-          </div>
-          
-          <div class="card-actions-ai">
-            <div class="card-actions">
-              <a href="dist/cv-victor-llm-es.md" target="_blank" class="action-btn pdf-btn lang-es"><i class="fa-regular fa-file-code"></i> Ver Markdown (ES)</a>
-              <a href="dist/cv-victor-llm-en.md" target="_blank" class="action-btn pdf-btn lang-en"><i class="fa-regular fa-file-code"></i> View Markdown (EN)</a>
-            </div>
-            
-            <button onclick="copyToClipboard('es', this)" class="action-btn copy-btn lang-es">
-              <span class="btn-text"><i class="fa-regular fa-copy"></i> Copiar CV para IA</span>
-            </button>
-            <button onclick="copyToClipboard('en', this)" class="action-btn copy-btn lang-en">
-              <span class="btn-text"><i class="fa-regular fa-copy"></i> Copy CV for AI</span>
-            </button>
-          </div>
-        </div>
-
       </div>
-    </section>
+
+      <!-- Contact Info -->
+      <div class="sidebar-widget">
+        <h3 class="widget-title lang-es">Contacto</h3>
+        <h3 class="widget-title lang-en">Contact</h3>
+        
+        <ul class="contact-list">
+          <li>
+            <i class="fa-regular fa-envelope"></i>
+            <div>
+              <span class="label">Email</span>
+              <a href="mailto:vicks630@gmail.com">vicks630@gmail.com</a>
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <div>
+              <span class="label">Teléfono</span>
+              <a href="tel:+34675946486">+34 675 94 64 86</a>
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-globe"></i>
+            <div>
+              <span class="label">Web Personal</span>
+              <a href="https://victor-alonso.es" target="_blank">victor-alonso.es</a>
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-terminal"></i>
+            <div>
+              <span class="label">Web Estudio</span>
+              <a href="https://walkiriaapps.com" target="_blank">walkiriaapps.com</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Networks -->
+      <div class="sidebar-widget">
+        <h3 class="widget-title lang-es">Redes & Perfiles</h3>
+        <h3 class="widget-title lang-en">Social Profiles</h3>
+        
+        <ul class="contact-list">
+          <li>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <div>
+              <span class="label">LinkedIn</span>
+              <a href="https://linkedin.com/in/vialonso" target="_blank">linkedin.com/in/vialonso</a>
+            </div>
+          </li>
+          <li>
+            <i class="fa-brands fa-github"></i>
+            <div>
+              <span class="label">GitHub</span>
+              <a href="https://github.com/vicksWalkiria" target="_blank">github.com/vicksWalkiria</a>
+            </div>
+          </li>
+          <li>
+            <i class="fa-brands fa-google-play"></i>
+            <div>
+              <span class="label">Google Play Dev</span>
+              <a href="https://play.google.com/store/apps/dev?id=4633874941646419208" target="_blank">Play Developer Profile</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Languages -->
+      <div class="sidebar-widget">
+        <h3 class="widget-title lang-es">Idiomas</h3>
+        <h3 class="widget-title lang-en">Languages</h3>
+        
+        <ul class="language-bars">
+          <li>
+            <div class="lang-info">
+              <span class="lang-name lang-es">Español</span>
+              <span class="lang-name lang-en">Spanish</span>
+              <span class="lang-level lang-es">Nativo</span>
+              <span class="lang-level lang-en">Native</span>
+            </div>
+            <div class="progress-bar"><div class="progress" style="width: 100%;"></div></div>
+          </li>
+          <li>
+            <div class="lang-info">
+              <span class="lang-name lang-es">Inglés</span>
+              <span class="lang-name lang-en">English</span>
+              <span class="lang-level">B2 Certified</span>
+            </div>
+            <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+          </li>
+          <li>
+            <div class="lang-info">
+              <span class="lang-name lang-es">Alemán</span>
+              <span class="lang-name lang-en">German</span>
+              <span class="lang-level">B2 Certified</span>
+            </div>
+            <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Right Side: Extensive Resume Sections -->
+    <div class="cv-main-content">
+      
+      <!-- Section 1: Executive Summary -->
+      <section class="cv-section">
+        <h2 class="section-title lang-es">Perfil Profesional</h2>
+        <h2 class="section-title lang-en">Professional Profile</h2>
+        
+        <p class="summary-text lang-es">
+          Desarrollador de software sénior con más de 15 años de experiencia en Android nativo, desarrollo FullStack, automatización y SEO técnico. Especializado en resolver problemas complejos de producción, optimizar rendimiento móvil/web e integrar sistemas críticos. Combino desarrollo, consultoría y docencia técnica con una fuerte visión de negocio.
+        </p>
+        <p class="summary-text lang-en">
+          Senior Software Engineer with 15+ years of experience in native Android, FullStack development, automation, and technical SEO. Specialized in solving complex production issues, optimizing mobile/web performance, and integrating critical systems. I combine development, consulting, and technical teaching with a strong business vision.
+        </p>
+      </section>
+
+      <!-- Section 2: Technical Skills Matrix -->
+      <section class="cv-section">
+        <h2 class="section-title lang-es">Aptitudes Técnicas</h2>
+        <h2 class="section-title lang-en">Technical Skills</h2>
+        
+        <div class="skills-grid">
+          
+          <div class="skill-category">
+            <h3 class="skill-category-title"><i class="fa-brands fa-android"></i> Mobile Engineering</h3>
+            <div class="skill-pills">
+              <span>Android SDK</span>
+              <span>Kotlin</span>
+              <span>Java</span>
+              <span>Gradle</span>
+              <span>Firebase</span>
+              <span>MVVM / MVI</span>
+              <span>Room DB</span>
+              <span>Retrofit</span>
+              <span>Jetpack Compose</span>
+              <span>Play Console</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="skill-category-title"><i class="fa-solid fa-code"></i> Backend & Web</h3>
+            <div class="skill-pills">
+              <span>PHP</span>
+              <span>Laravel</span>
+              <span>WordPress</span>
+              <span>WooCommerce</span>
+              <span>Magento</span>
+              <span>MySQL</span>
+              <span>REST APIs</span>
+              <span>JavaScript</span>
+              <span>ReactJS</span>
+              <span>Python</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="skill-category-title"><i class="fa-solid fa-magnifying-glass-chart"></i> SEO Técnico & WPO</h3>
+            <div class="skill-pills">
+              <span>Core Web Vitals</span>
+              <span>WPO Optimization</span>
+              <span>Search Console</span>
+              <span>PageSpeed Insights</span>
+              <span>Schema.org Markup</span>
+              <span>Indexability Budgets</span>
+              <span>Log File Analysis</span>
+              <span>Crawl Budgets</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="skill-category-title"><i class="fa-solid fa-gears"></i> DevOps & Automation</h3>
+            <div class="skill-pills">
+              <span>Git / GitHub</span>
+              <span>Linux Server Admin</span>
+              <span>HestiaCP / cPanel</span>
+              <span>Apache / Nginx</span>
+              <span>AWS basics</span>
+              <span>Web Scraping Robots</span>
+              <span>APIs Integration</span>
+              <span>Composer / NPM</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Section 3: Experience Timeline -->
+      <section class="cv-section">
+        <h2 class="section-title lang-es">Experiencia Profesional</h2>
+        <h2 class="section-title lang-en">Professional Experience</h2>
+        
+        <div class="timeline">
+          
+          <!-- Experience Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title lang-es">Desarrollador FullStack & Consultor SEO Técnico</h3>
+                  <h3 class="role-title lang-en">FullStack Developer & Technical SEO Consultant</h3>
+                  <span class="company-name">Walkiria Apps <span class="badge-freelance lang-es">Autónomo</span><span class="badge-freelance lang-en">Freelance</span></span>
+                </div>
+                <span class="timeline-date lang-es">Agosto 2015 -- Actualidad</span>
+                <span class="timeline-date lang-en">August 2015 -- Present</span>
+              </div>
+              
+              <p class="timeline-desc lang-es">
+                Servicios profesionales independientes de consultoría móvil, desarrollo web, WPO y posicionamiento en buscadores para clientes de múltiples sectores. Destacan:
+              </p>
+              <p class="timeline-desc lang-en">
+                Professional mobile engineering, WPO consulting, custom web development, and search engine optimization services for various industry clients. Featured cases:
+              </p>
+              
+              <ul class="timeline-bullets">
+                <li class="lang-es"><strong>GdBodas.net</strong>: Desarrollo técnico integral de la plataforma de eventos musicales.</li>
+                <li class="lang-en"><strong>GdBodas.net</strong>: Full-stack development and infrastructure setup for the musical events portal.</li>
+                
+                <li class="lang-es"><strong>Artroscopia Albacete</strong>: Creación y mantenimiento de portal médico optimizado para velocidad móvil, SEO local e indexabilidad.</li>
+                <li class="lang-en"><strong>Artroscopia Albacete</strong>: Designed and maintained a custom medical site optimized for local SEO speed and discoverability.</li>
+                
+                <li class="lang-es"><strong>Candelas y Felipa</strong>: E-commerce completo desarrollado sobre Magento con módulos personalizados y mantenimiento técnico avanzado.</li>
+                <li class="lang-en"><strong>Candelas y Felipa</strong>: E-commerce storefront built on Magento with custom modules and advanced technical maintenance.</li>
+                
+                <li class="lang-es">Programación de plugins personalizados de WordPress, optimizaciones profundas de velocidad (Google Lighthouse hasta 100/100) y mantenimiento avanzado de sistemas.</li>
+                <li class="lang-en">Built custom WordPress plugins, managed servers, and conducted advanced speed optimization audits (Lighthouse up to 100/100).</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title lang-es">Co-Founder & Android Developer</h3>
+                  <h3 class="role-title lang-en">Co-Founder & Android Developer</h3>
+                  <span class="company-name">Bandoki Apps Studio</span>
+                </div>
+                <span class="timeline-date lang-es">Marzo 2016 -- Actualidad</span>
+                <span class="timeline-date lang-en">March 2016 -- Present</span>
+              </div>
+              
+              <p class="timeline-desc lang-es">
+                Dirección técnica móvil y arquitectura de múltiples proyectos móviles nativos, con integración de APIs complejas y persistencia de datos local robusta.
+              </p>
+              <p class="timeline-desc lang-en">
+                Technical mobile director and architecture of multiple native apps, integrating REST APIs and local database persistence.
+              </p>
+            </div>
+          </div>
+
+          <!-- Experience Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title lang-es">Ingeniero de Desarrollo de Software Sénior</h3>
+                  <h3 class="role-title lang-en">Senior Software Development Engineer</h3>
+                  <span class="company-name">Salumedia</span>
+                </div>
+                <span class="timeline-date lang-es">Julio 2018 -- Marzo 2020</span>
+                <span class="timeline-date lang-en">July 2018 -- March 2020</span>
+              </div>
+              
+              <p class="timeline-desc lang-es">
+                Desarrollo FullStack enfocado en software móvil e IoT: integraciones Java/Kotlin nativas en Android, APIs RESTful en PHP Slim, frontend en ReactJS, administración de servidores en AWS e integración de protocolos de comunicación MQTT en tiempo real para dispositivos médicos IoT.
+              </p>
+              <p class="timeline-desc lang-en">
+                Full-stack software engineering with a primary focus on mobile: Java/Kotlin native Android development, backend REST APIs (PHP Slim), AWS hosting, and MQTT protocol integration for real-time IoT devices.
+              </p>
+            </div>
+          </div>
+
+          <!-- Experience Item 4 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title lang-es">Desarrollador Android, PHP & Magento</h3>
+                  <h3 class="role-title lang-en">Android, PHP & Magento Developer</h3>
+                  <span class="company-name">Ontic Soluciones</span>
+                </div>
+                <span class="timeline-date lang-es">Diciembre 2012 -- Agosto 2015</span>
+                <span class="timeline-date lang-en">December 2012 -- August 2015</span>
+              </div>
+              
+              <p class="timeline-desc lang-es">
+                Desarrollo de aplicaciones nativas en Android y aplicaciones híbridas con PhoneGap. Creación y soporte avanzado de e-commerce Magento con módulos personalizados y programación de extensiones en PHP.
+              </p>
+              <p class="timeline-desc lang-en">
+                Developed native Android applications and hybrid PhoneGap products. Built Magento e-commerce storefronts with custom modules and advanced technical maintenance in PHP.
+              </p>
+            </div>
+          </div>
+
+          <!-- Experience Item 5 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title lang-es">Android Developer RnD</h3>
+                  <h3 class="role-title lang-en">Android Developer RnD</h3>
+                  <span class="company-name">ALTEN / Prisa Digital</span>
+                </div>
+                <span class="timeline-date lang-es">Agosto 2012 -- Diciembre 2012</span>
+                <span class="timeline-date lang-en">August 2012 -- December 2012</span>
+              </div>
+              
+              <p class="timeline-desc lang-es">
+                Desarrollo de aplicaciones móviles y labores de I+D aplicadas a la suite digital del grupo periodístico Prisa en Madrid.
+              </p>
+              <p class="timeline-desc lang-en">
+                Android development and R&D engineering for the digital applications suite of the Prisa Publishing Group in Madrid.
+              </p>
+            </div>
+          </div>
+
+          <!-- Experience Item 6 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title lang-es">Android Developer & Administrador de Sistemas</h3>
+                  <h3 class="role-title lang-en">Android Developer & Sysadmin</h3>
+                  <span class="company-name">appslab</span>
+                </div>
+                <span class="timeline-date lang-es">Marzo 2011 -- Agosto 2012</span>
+                <span class="timeline-date lang-en">March 2011 -- August 2012</span>
+              </div>
+              
+              <p class="timeline-desc lang-es">
+                Programación de aplicaciones móviles nativas Android y administración de la infraestructura de hosting corporativa a través de cPanel.
+              </p>
+              <p class="timeline-desc lang-en">
+                Native Android developer and Linux web server administrator via cPanel.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Section 4: Selected Projects Showroom -->
+      <section class="cv-section">
+        <h2 class="section-title lang-es">Proyectos Destacados</h2>
+        <h2 class="section-title lang-en">Selected Projects</h2>
+        
+        <div class="projects-grid-showroom">
+          
+          <div class="project-show-card">
+            <div class="project-show-icon"><i class="fa-brands fa-android"></i></div>
+            <h3 class="project-show-title">Precio Gasolineras España</h3>
+            <p class="project-show-desc lang-es">
+              Aplicación nativa en Kotlin con arquitectura MVVM y base de datos Room. Integra servicios en segundo plano para sincronizar precios oficiales en tiempo real desde la API del Ministerio de España. +1,000 descargas activas en Google Play.
+            </p>
+            <p class="project-show-desc lang-en">
+              Native Kotlin Android app using MVVM architecture and Room DB. Integrates background sync services to pull real-time fuel pricing from the Spanish Ministry APIs. +1,000 active downloads on Google Play.
+            </p>
+            <div class="project-show-meta">
+              <a href="https://play.google.com/store/apps/details?id=com.walkiriaapps.topgasolineras" target="_blank" class="show-link"><i class="fa-brands fa-google-play"></i> Google Play</a>
+            </div>
+          </div>
+
+          <div class="project-show-card">
+            <div class="project-show-icon"><i class="fa-solid fa-gauge-high"></i></div>
+            <h3 class="project-show-title">WPO Speed Optimization Engine</h3>
+            <p class="project-show-desc lang-es">
+              Auditoría y refactorización técnica de código en WordPress, Laravel y WooCommerce. Eliminación de bloqueos de renderizado y configuración de almacenamiento en caché extremo, logrando puntuaciones estables de 100/100 en Google PageSpeed.
+            </p>
+            <p class="project-show-desc lang-en">
+              Technical speed audits and code refactoring on production WordPress, Laravel and WooCommerce sites. Removed render-blocking resources and configured aggressive server-side caching, reaching perfect 100/100 scores.
+            </p>
+            <div class="project-show-meta">
+              <span class="show-badge"><i class="fa-solid fa-circle-check"></i> Lighthouse 100/100</span>
+            </div>
+          </div>
+
+          <div class="project-show-card">
+            <div class="project-show-icon"><i class="fa-solid fa-diagram-project"></i></div>
+            <h3 class="project-show-title">Robots de Scraping & Log Analysis</h3>
+            <p class="project-show-desc lang-es">
+              Programación de scripts en Python y Node.js para rastreo masivo, análisis de redirecciones de servidores y procesado automatizado de logs de servidor (Apache/Nginx) para la optimización de presupuestos de indexación SEO.
+            </p>
+            <p class="project-show-desc lang-en">
+              Developed custom automated Python and Node.js web scrapers for server redirection checks, broken links monitoring, and automated Apache/Nginx server log parsing to optimize crawl budgets.
+            </p>
+            <div class="project-show-meta">
+              <span class="show-badge"><i class="fa-brands fa-python"></i> Python scripts</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Section 5: Education & Teaching -->
+      <section class="cv-section">
+        <h2 class="section-title lang-es">Educación y Docencia</h2>
+        <h2 class="section-title lang-en">Education & Academic Background</h2>
+        
+        <div class="timeline">
+          
+          <div class="timeline-item">
+            <div class="timeline-marker education"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title lang-es">Ingeniero en Informática</h3>
+                  <h3 class="role-title lang-en">B.S. in Computer Engineering</h3>
+                  <span class="company-name">Universidad de Castilla-La Mancha (UCLM)</span>
+                </div>
+                <span class="timeline-date lang-es">Graduado</span>
+                <span class="timeline-date lang-en">Graduated</span>
+              </div>
+              <p class="timeline-desc lang-es">
+                Título oficial cursado en la Escuela Superior de Ingeniería Informática de Albacete. Incluye estancias de intercambio académico en **Fachhochschule Trier** (Alemania) y en la **Universidad de Granada** (Facultad de Informática).
+              </p>
+              <p class="timeline-desc lang-en">
+                Official degree completed at the Superior School of Computer Engineering of Albacete. Includes academic exchange stays at **Fachhochschule Trier** (Germany) and the **University of Granada** (Faculty of Computer Science).
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker education"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title lang-es">Profesor Sustituto & Conferenciante</h3>
+                  <h3 class="role-title lang-en">Substitute Lecturer & Speaker</h3>
+                  <span class="company-name">Escuela Superior de Ingeniería Informática (UCLM)</span>
+                </div>
+                <span class="timeline-date">2025 -- 2026</span>
+              </div>
+              <p class="timeline-desc lang-es">
+                Impartición de clases presenciales prácticas en la asignatura *Metodología de la Programación*, y docencia presencial como profesor sustituto en las asignaturas de *Bases de Datos* y *Sistemas Basados en Conocimiento* en el Grado de Informática.
+              </p>
+              <p class="timeline-desc lang-en">
+                Delivered academic lectures at the Albacete campus for the Computer Science Degree, leading practice groups in *Programming Methodology*, and lecturing in *Databases* and *Knowledge-Based Systems*.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker education"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title lang-es">Formador Técnico de Android & Java</h3>
+                  <h3 class="role-title lang-en">Android & Java Technical Instructor</h3>
+                  <span class="company-name">Formación Profesional & Corporativa</span>
+                </div>
+                <span class="timeline-date lang-es">2018 -- Actualidad</span>
+                <span class="timeline-date lang-en">2018 -- Present</span>
+              </div>
+              <p class="timeline-desc lang-es">
+                Planificación y dictado de cursos tecnológicos oficiales. Destaca el curso intensivo de 300 horas en Java SE y Android para **Telefónica**, así como colaboraciones formativas en Formabyte y tutorías de Trabajos de Fin de Máster (TFM) basados en apps Android.
+              </p>
+              <p class="timeline-desc lang-en">
+                Designed syllabus and taught corporate courses, including an intensive 300-hour Java & Android developer track for **Telefónica**. Academic mentor for Master's Thesis (TFM) projects centered on mobile technologies.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
 
   </main>
 
+  <!-- Footer -->
   <footer class="main-footer">
     <div class="footer-container">
       <p class="lang-es">&copy; 2026 Víctor Alonso. Generación de CVs automatizada mediante XeLaTeX & GitHub Actions.</p>
@@ -244,7 +604,7 @@
     </div>
   </footer>
 
-  <!-- Translation & Copy Script -->
+  <!-- Interactive Translation & Dropdown Scripts -->
   <script>
     // Set language on body
     function setLanguage(lang) {
@@ -257,8 +617,24 @@
       
       // Save user preference
       localStorage.setItem('cv-lang', lang);
+      
+      // Close dropdown if open
+      document.getElementById('cv-dropdown-menu').classList.remove('show');
     }
     
+    // Toggle Download Dropdown
+    function toggleDropdown() {
+      document.getElementById('cv-dropdown-menu').classList.toggle('show');
+    }
+    
+    // Close dropdown on click outside
+    window.addEventListener('click', function(e) {
+      const dropdown = document.querySelector('.download-dropdown');
+      if (dropdown && !dropdown.contains(e.target)) {
+        document.getElementById('cv-dropdown-menu').classList.remove('show');
+      }
+    });
+
     // Auto-load preference or default to browser language
     window.addEventListener('DOMContentLoaded', () => {
       const savedLang = localStorage.getItem('cv-lang');
@@ -276,14 +652,14 @@
 
     // Copy to clipboard from Markdown file
     async function copyToClipboard(lang, buttonEl) {
-      const originalText = buttonEl.querySelector('.btn-text').innerHTML;
+      const originalText = buttonEl.innerHTML;
       const filePath = 'dist/cv-victor-llm-' + lang + '.md';
       
       try {
         buttonEl.disabled = true;
-        buttonEl.querySelector('.btn-text').innerHTML = lang === 'es' 
-          ? '<i class="fa-solid fa-circle-notch fa-spin"></i> Obteniendo CV...' 
-          : '<i class="fa-solid fa-circle-notch fa-spin"></i> Fetching CV...';
+        buttonEl.innerHTML = lang === 'es' 
+          ? '<i class="fa-solid fa-circle-notch fa-spin"></i> Copiando...' 
+          : '<i class="fa-solid fa-circle-notch fa-spin"></i> Copying...';
           
         const response = await fetch(filePath);
         if (!response.ok) {
@@ -291,26 +667,26 @@
         }
         
         const markdownText = await response.text();
-        
         await navigator.clipboard.writeText(markdownText);
         
         buttonEl.classList.add('success');
-        buttonEl.querySelector('.btn-text').innerHTML = lang === 'es'
+        buttonEl.innerHTML = lang === 'es'
           ? '<i class="fa-solid fa-check"></i> ¡Copiado con éxito!'
           : '<i class="fa-solid fa-check"></i> Copied successfully!';
           
       } catch (err) {
         console.error('Error copying text:', err);
         buttonEl.classList.add('error');
-        buttonEl.querySelector('.btn-text').innerHTML = lang === 'es'
-          ? '<i class="fa-solid fa-triangle-exclamation"></i> Error al copiar'
-          : '<i class="fa-solid fa-triangle-exclamation"></i> Copy failed';
+        buttonEl.innerHTML = lang === 'es'
+          ? '<i class="fa-solid fa-triangle-exclamation"></i> Error'
+          : '<i class="fa-solid fa-triangle-exclamation"></i> Failed';
       } finally {
         setTimeout(() => {
           buttonEl.disabled = false;
           buttonEl.classList.remove('success', 'error');
-          buttonEl.querySelector('.btn-text').innerHTML = originalText;
-        }, 2500);
+          buttonEl.innerHTML = originalText;
+          document.getElementById('cv-dropdown-menu').classList.remove('show');
+        }, 2000);
       }
     }
   </script>
