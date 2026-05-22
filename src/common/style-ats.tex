@@ -1,0 +1,81 @@
+% style-ats.tex
+% Shared ATS-friendly stylesheet for Victor Alonso's resumes
+% Compiled with XeLaTeX
+
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{
+  left=1.8cm,
+  right=1.8cm,
+  top=1.8cm,
+  bottom=1.8cm
+}
+
+% Fonts & Typography
+\usepackage{fontspec}
+\setmainfont{Fira Sans}[
+  UprightFont = * Book,
+  BoldFont = * Medium,
+  ItalicFont = * Book Italic,
+  BoldItalicFont = * Medium Italic
+]
+\setsansfont{Fira Sans}
+
+% Colors (Keep it simple and high contrast: dark gray and black)
+\usepackage{xcolor}
+\definecolor{primary}{HTML}{000000}   % Black
+\definecolor{accent}{HTML}{334155}    % Slate (for subtle contrast in rules)
+\definecolor{textdark}{HTML}{111827}  % Dark Gray (for body text)
+
+% Set default text color
+\makeatletter
+\newcommand{\globalcolor}[1]{%
+  \color{#1}\global\let\default@color\current@color
+}
+\makeatother
+\AtBeginDocument{\globalcolor{textdark}}
+
+% Section headings styling (Clean, standard with simple underline rule)
+\usepackage{titlesec}
+\titleformat{\section}
+  {\large\bfseries}
+  {}{0em}{}
+  [\color{accent}\titlerule]
+\titlespacing{\section}{0pt}{1.4em}{0.6em}
+
+% Hyperref (Standard blue links so recruiters can easily click)
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+  colorlinks=true,
+  urlcolor=black,
+  linkcolor=black
+}
+
+% Lists styling (Standard bullet points)
+\usepackage{enumitem}
+\setlist[itemize]{
+  leftmargin=*,
+  noitemsep,
+  topsep=0.2em,
+  parsep=0.1em,
+  partopsep=0pt,
+  label=\textbullet
+}
+
+% Custom Command: Experience Entry (ATS layout)
+\newcommand{\resumeentry}[4]{%
+  \noindent{\textbf{#2}} \hfill {\textbf{#1}} \\
+  \noindent{\textit{#3}}
+  \ifx&#4&\else\\[0.2em] {\small #4}\fi
+  \vspace{0.8em}
+}
+
+% Custom Command: Project Highlight Entry (ATS layout)
+\newcommand{\projectentry}[2]{%
+  \noindent\textbf{#1} \\
+  {\small #2}
+  \vspace{0.6em}
+}
+
+% Standard page numbers for multi-page ATS resume
+\pagestyle{plain}

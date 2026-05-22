@@ -1,0 +1,135 @@
+% cv-victor-fullstack-seo.tex
+% Senior FullStack & SEO Consultant Resume for Víctor Alonso
+% Compiled with XeLaTeX
+
+\documentclass[10pt,a4paper]{article}
+
+% Include premium styles and common data
+\input{src/common/style-premium.tex}
+\input{src/common/data-victor.tex}
+
+\begin{document}
+
+\begin{paracol}{2}
+
+% ==========================================
+% LEFT COLUMN: SIDEBAR
+% ==========================================
+\begin{center}
+  \profilepic{assets/victor-profile.png}
+  
+  \vspace{1.0em}
+  {\color{primary}\LARGE\bfseries \myname} \\[0.2em]
+  {\color{accent}\small\bfseries FULLSTACK \& SEO CONSULTANT}
+\end{center}
+
+\sidehead{Contacto}
+\small
+\begin{itemize}[label={}, leftmargin=0.4cm]
+  \item[\color{accent}\faEnvelope] \href{mailto:\myemail}{\myemail}
+  \item[\color{accent}\faPhone] \href{tel:\myphone}{\myphone}
+  \item[\color{accent}\faMapMarker] \mylocation
+  \item[\color{accent}\faGlobe] \href{https://\myweb}{\myweb}
+  \item[\color{accent}\faLinkedin] \href{https://\mylinkedin}{LinkedIn}
+  \item[\color{accent}\faGithub] \href{https://\mygithub}{GitHub}
+\end{itemize}
+
+\sidehead{Aptitudes}
+\textbf{\color{primary}\footnotesize BACKEND \& WEB} \\
+\skilltag{PHP} \skilltag{Laravel} \skilltag{WordPress} \\
+\skilltag{WooCommerce} \skilltag{REST APIs} \skilltag{MySQL} \\
+\skilltag{React} \skilltag{JavaScript} \skilltag{Python} \\
+\skilltag{Magento}
+
+\vspace{0.4em}
+\textbf{\color{primary}\footnotesize SEO TÉCNICO \& WPO} \\
+\skilltag{Core Web Vitals} \skilltag{PageSpeed Insights} \\
+\skilltag{Search Console} \skilltag{Schema.org} \\
+\skilltag{Indexabilidad} \skilltag{Análisis de Logs} \\
+\skilltag{Crawl Budget} \skilltag{WPO}
+
+\vspace{0.4em}
+\textbf{\color{primary}\footnotesize DATOS Y AUTOMATIZACIÓN} \\
+\skilltag{Web Scraping} \skilltag{Python APIs} \\
+\skilltag{Dashboards SEO} \skilltag{Automatización}
+
+\vspace{0.4em}
+\textbf{\color{primary}\footnotesize HERRAMIENTAS \& SERVIDORES} \\
+\skilltag{Git} \skilltag{GitHub} \skilltag{HestiaCP} \\
+\skilltag{cPanel} \skilltag{Linux} \skilltag{Apache} \\
+\skilltag{AWS básico} \skilltag{Composer} \skilltag{NPM}
+
+\vspace{0.4em}
+\textbf{\color{primary}\footnotesize MOBILE} \\
+\skilltag{Android SDK} \skilltag{Kotlin} \skilltag{Gradle} \\
+\skilltag{MVVM} \skilltag{Firebase}
+
+\sidehead{Idiomas}
+\textbf{Español}: Nativo \\
+\textbf{Inglés}: Certificado B2 \\
+\textbf{Alemán}: Certificado B2
+
+\switchcolumn
+
+% ==========================================
+% RIGHT COLUMN: MAIN CONTENT
+% ==========================================
+
+\section{Perfil Profesional}
+Ingeniero de software FullStack y consultor de SEO técnico con más de 15 años de experiencia construyendo soluciones web a medida, optimizando plataformas de comercio electrónico y automatizando flujos de datos. Especializado en Web Performance Optimization (WPO), auditorías de Core Web Vitals, indexabilidad avanzada, analítica web e infraestructura de servidores. Combino un sólido perfil de desarrollo en PHP/Laravel/WordPress con visión comercial para alinear el rendimiento técnico con las conversiones de negocio.
+
+\section{Proyectos Destacados}
+
+\projectentry{Optimización WPO y SEO Técnico en Sitios Reales}{
+  Refactorización y optimización de velocidad de carga crítica de sitios web logrando puntuaciones de 100/100 en Google Lighthouse. Implementación de datos estructurados enriquecidos (Schema.org), control estricto de indexación y optimización de rastreo (\textit{crawl budget}).
+}
+
+\projectentry{Desarrollo Web a Medida y WooCommerce}{
+  Creación de temas, plugins exclusivos de WordPress y aplicaciones Laravel altamente optimizadas con conexiones seguras a pasarelas de pago (Stripe) y APIs de control de datos empresariales.
+}
+
+\projectentry{Automatizaciones y Scraping de Datos}{
+  Desarrollo de herramientas de analítica interna, robots de monitorización SEO y scripts de scraping en Python para generar dashboards personalizados orientados a optimizar posicionamiento en buscadores.
+}
+
+\section{Experiencia Profesional}
+
+\resumeentry{2015 -- Act.}{Walkiria Apps}{FullStack Developer \& SEO Technical Consultant}{
+  Servicios profesionales como autónomo de desarrollo web, WPO y consultoría SEO.
+  \begin{itemize}
+    \item \textbf{GdBodas.net}: Desarrollo técnico integral de la web de eventos musicales.
+    \item \textbf{Artroscopia Albacete}: Portal médico a medida optimizado en SEO local, velocidad y rastreo.
+    \item \textbf{Candelas y Felipa}: E-commerce completo desarrollado sobre Magento con módulos y plugins totalmente personalizados.
+    \item Creación y auditoría de plugins de WordPress personalizados y mantenimiento de sistemas.
+  \end{itemize}
+}
+
+\resumeentry{2018 -- 2020}{Salumedia}{Senior Software Development Engineer}{
+  Desarrollo FullStack: Creación de REST APIs robustas en PHP (Slim framework), desarrollo del frontend dinámico utilizando ReactJS, administración de servidores web en AWS e integraciones en tiempo real vía MQTT.
+}
+
+\resumeentry{2012 -- 2015}{Ontic Soluciones}{Android, PHP \& Magento developer}{
+  Ingeniería web sobre Magento e-commerce, desarrollo de extensiones, integraciones backend complejas en PHP y desarrollo de aplicaciones móviles nativas y PhoneGap.
+}
+
+\resumeentry{2011 -- 2012}{appslab}{Android \& Web Developer / Sysadmin}{
+  Desarrollo frontend y administración de servidores a través de cPanel y Apache.
+}
+
+\resumeentry{2010 (4 meses)}{Ontic Soluciones}{Programador}{
+  Programación de backend y desarrollo de algoritmos de optimización de datos.
+}
+
+\section{Formación y Docencia}
+
+\resumeentry{2025 -- 2026}{Universidad de Castilla-La Mancha (UCLM)}{Profesor sustituto y Conferenciante}{
+  Docencia en la Escuela Superior de Ingeniería Informática de Albacete en las asignaturas: \textit{Bases de Datos}, \textit{Sistemas Basados en Conocimiento} y \textit{Metodología de la Programación}.
+}
+
+\resumeentry{2018 -- Act.}{Formador Técnico}{Autónomo}{
+  Impartición de cursos de formación para programadores corporativos (incluyendo Curso de 300 horas en Java SE y Android para Telefónica). Asesoramiento y guía metodológica en proyectos de fin de máster (TFM).
+}
+
+\end{paracol}
+
+\end{document}

@@ -1,0 +1,124 @@
+% style-premium.tex
+% Shared premium stylesheet for Victor Alonso's Visual Resumes
+% Compiled with XeLaTeX
+
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{
+  left=1.2cm,
+  right=1.2cm,
+  top=1.2cm,
+  bottom=1.2cm
+}
+
+% Fonts & Typography
+\usepackage{fontspec}
+\setmainfont{Fira Sans}[
+  UprightFont = * Book,
+  BoldFont = * Medium,
+  ItalicFont = * Book Italic,
+  BoldItalicFont = * Medium Italic
+]
+\setsansfont{Fira Sans}
+
+% Colors
+\usepackage{xcolor}
+\definecolor{primary}{HTML}{1E293B}   % Deep Slate Blue (for headers)
+\definecolor{accent}{HTML}{0F766E}    % Premium Teal (for accents and rules)
+\definecolor{textdark}{HTML}{334155}  % Charcoal (for general text)
+\definecolor{bglight}{HTML}{F8FAFC}   % Soft gray (for tags and backgrounds)
+\definecolor{muted}{HTML}{64748B}     % Muted slate (for small subheadings/dates)
+
+% Set default text color
+\makeatletter
+\newcommand{\globalcolor}[1]{%
+  \color{#1}\global\let\default@color\current@color
+}
+\makeatother
+\AtBeginDocument{\globalcolor{textdark}}
+
+% Section headings styling
+\usepackage{titlesec}
+\titleformat{\section}
+  {\color{primary}\Large\bfseries\scshape}
+  {}{0em}{}
+  [\color{accent}\titlerule]
+\titlespacing{\section}{0pt}{1.2em}{0.6em}
+
+% Icons
+\usepackage{fontawesome5}
+
+% Hyperref
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+  colorlinks=true,
+  urlcolor=accent,
+  linkcolor=accent
+}
+
+% Lists styling
+\usepackage{enumitem}
+\setlist[itemize]{
+  leftmargin=*,
+  noitemsep,
+  topsep=0.1em,
+  parsep=0.1em,
+  partopsep=0pt,
+  label={\color{accent}\tiny\faCircle}
+}
+
+% Two-column paracol configuration
+\usepackage{paracol}
+\columnratio{0.32}
+\setlength{\columnsep}{0.6cm}
+
+% TikZ for circular image and pill tags
+\usepackage{tikz}
+\usetikzlibrary{shapes}
+
+% Custom Command: Circular Profile Picture
+\newcommand{\profilepic}[2][3.2cm]{%
+  \begin{tikzpicture}
+    \clip (0,0) circle (#1/2);
+    \node at (0,0) {\includegraphics[width=#1]{#2}};
+  \end{tikzpicture}%
+}
+
+% Custom Command: Skill Badge (Pill Tag)
+\newcommand{\skilltag}[1]{%
+  \tikz[baseline=-0.6ex]\node[
+    draw=accent!25,
+    fill=bglight,
+    rounded corners=3.5pt,
+    inner sep=3.5pt,
+    outer sep=1pt,
+    text=textdark,
+    font=\scriptsize\bfseries
+  ]{#1};%
+}
+
+% Custom Command: Sidebar Header
+\newcommand{\sidehead}[1]{%
+  \vspace{1.2em}
+  \noindent{\color{primary}\large\bfseries\MakeUppercase{#1}} \\
+  {\color{accent}\rule{\linewidth}{1.5pt}}
+  \vspace{0.4em}
+}
+
+% Custom Command: Experience Entry
+\newcommand{\resumeentry}[4]{%
+  \noindent{\color{primary}\textbf{#2}} \hfill {\small\color{muted}\textbf{#1}} \\
+  \noindent{\small\color{accent}\textbf{#3}}
+  \ifx&#4&\else\\[0.15em] {\small #4}\fi
+  \vspace{0.7em}
+}
+
+% Custom Command: Project Highlight Entry
+\newcommand{\projectentry}[2]{%
+  \noindent{\color{primary}\textbf{#1}} \\
+  {\small #2}
+  \vspace{0.6em}
+}
+
+% Remove page numbers for visual resume
+\pagestyle{empty}
