@@ -1,0 +1,135 @@
+% cv-victor-fullstack-seo-en.tex
+% Senior FullStack & SEO Consultant Resume for Víctor Alonso (English Version)
+% Compiled with XeLaTeX
+
+\documentclass[10pt,a4paper]{article}
+
+% Include premium styles and common data
+\input{src/common/style-premium.tex}
+\input{src/common/data-victor.tex}
+
+\begin{document}
+
+\begin{paracol}{2}
+
+% ==========================================
+% LEFT COLUMN: SIDEBAR
+% ==========================================
+\begin{center}
+  \profilepic{assets/victor-profile.png}
+  
+  \vspace{1.0em}
+  {\color{primary}\LARGE\bfseries \myname} \\[0.2em]
+  {\color{accent}\small\bfseries FULLSTACK \& SEO CONSULTANT}
+\end{center}
+
+\sidehead{Contact}
+\small
+\begin{itemize}[label={}, leftmargin=0.4cm]
+  \item[\color{accent}\faEnvelope] \href{mailto:\myemail}{\myemail}
+  \item[\color{accent}\faPhone] \href{tel:\myphone}{\myphone}
+  \item[\color{accent}\faMapMarker] \mylocation
+  \item[\color{accent}\faGlobe] \href{https://\myweb}{\myweb}
+  \item[\color{accent}\faLinkedin] \href{https://\mylinkedin}{LinkedIn}
+  \item[\color{accent}\faGithub] \href{https://\mygithub}{GitHub}
+\end{itemize}
+
+\sidehead{Skills}
+\textbf{\color{primary}\footnotesize BACKEND \& WEB} \\
+\skilltag{PHP} \skilltag{Laravel} \skilltag{WordPress} \\
+\skilltag{WooCommerce} \skilltag{REST APIs} \skilltag{MySQL} \\
+\skilltag{React} \skilltag{JavaScript} \skilltag{Python} \\
+\skilltag{Magento}
+
+\vspace{0.4em}
+\textbf{\color{primary}\footnotesize TECHNICAL SEO \& WPO} \\
+\skilltag{Core Web Vitals} \skilltag{PageSpeed Insights} \\
+\skilltag{Search Console} \skilltag{Schema.org} \\
+\skilltag{Indexability} \skilltag{Log Analysis} \\
+\skilltag{Crawl Budget} \skilltag{WPO}
+
+\vspace{0.4em}
+\textbf{\color{primary}\footnotesize DATA \& AUTOMATION} \\
+\skilltag{Web Scraping} \skilltag{Python APIs} \\
+\skilltag{SEO Dashboards} \skilltag{Automation}
+
+\vspace{0.4em}
+\textbf{\color{primary}\footnotesize SERVERS \& TOOLS} \\
+\skilltag{Git} \skilltag{GitHub} \skilltag{HestiaCP} \\
+\skilltag{cPanel} \skilltag{Linux} \skilltag{Apache} \\
+\skilltag{AWS Basic} \skilltag{Composer} \skilltag{NPM}
+
+\vspace{0.4em}
+\textbf{\color{primary}\footnotesize MOBILE} \\
+\skilltag{Android SDK} \skilltag{Kotlin} \skilltag{Gradle} \\
+\skilltag{MVVM} \skilltag{Firebase}
+
+\sidehead{Languages}
+\textbf{Spanish}: Native \\
+\textbf{English}: B2 Certified \\
+\textbf{German}: B2 Certified
+
+\switchcolumn
+
+% ==========================================
+% RIGHT COLUMN: MAIN CONTENT
+% ==========================================
+
+\section{Professional Profile}
+Senior FullStack Software Engineer and Technical SEO Consultant with 15+ years of experience building custom web solutions, optimizing high-volume e-commerce platforms, and automating complex data flows. Specialized in Web Performance Optimization (WPO), advanced Core Web Vitals audits, crawl budget optimization, indexability troubleshooting, and web infrastructure. I blend solid backend mastery (PHP/Laravel/WordPress) with a commercial and conversion-driven approach to boost organic traffic and conversions.
+
+\section{Selected Projects}
+
+\projectentry{WPO \& Technical SEO Optimization}{
+  Performance auditing and refactoring on production websites, achieving perfect 100/100 Google Lighthouse scores. Implementation of structured schema data (Schema.org), indexing controls, and indexation budget management.
+}
+
+\projectentry{Custom Web \& WooCommerce Solutions}{
+  Custom theme and plugin development for WordPress/WooCommerce, high-performance Laravel applications, and secure integrations with payment systems (Stripe) and corporate ERP/REST APIs.
+}
+
+\projectentry{Automation \& Web Scraping Robots}{
+  Custom Python scripts, scraper spiders, and analytics tools designed to extract indexing and SEO metrics, generating dashboards focused on conversion rates.
+}
+
+\section{Professional Experience}
+
+\resumeentry{2015 -- Pres.}{Walkiria Apps}{FullStack Developer \& SEO Technical Consultant}{
+  Independent software engineering and WPO/SEO technical consulting for clients across multiple commercial sectors.
+  \begin{itemize}
+    \item \textbf{GdBodas.net}: Full-stack design and technical implementation of the musical events portal.
+    \item \textbf{Artroscopia Albacete}: Medical portal optimized for fast loading, technical local SEO, and maximum discoverability.
+    \item \textbf{Candelas y Felipa}: E-commerce storefront built on Magento with highly customized plugins and backend integrations.
+    \item Auditing, maintaining server setups, and creating custom WordPress plugins.
+  \end{itemize}
+}
+
+\resumeentry{2018 -- 2020}{Salumedia}{Senior Software Development Engineer}{
+  Full-stack engineering: designed REST APIs using PHP (Slim framework), dynamic frontend development with ReactJS, AWS deployment, and real-time MQTT message broker management for IoT health services.
+}
+
+\resumeentry{2012 -- 2015}{Ontic Soluciones}{Android, PHP \& Magento Developer}{
+  Web developer on high-traffic Magento stores, custom PHP modules, REST APIs, and native/hybrid mobile application developer.
+}
+
+\resumeentry{2011 -- 2012}{appslab}{Android \& Web Developer / Sysadmin}{
+  Frontend development and web server administration utilizing cPanel and Apache.
+}
+
+\resumeentry{2010 (4 mos.)}{Ontic Soluciones}{Programmer}{
+  Backend development and data processing optimization algorithms.
+}
+
+\section{Teaching \& Education}
+
+\resumeentry{2025 -- 2026}{University of Castilla-La Mancha (UCLM)}{Substitute Lecturer \& Guest Speaker}{
+  Taught database and programming courses inside the Computer Science Degree (Albacete campus), including: \textit{Databases}, \textit{Sistemas Basados en Conocimiento}, and \textit{Programming Methodology}.
+}
+
+\resumeentry{2018 -- Pres.}{Technical Trainer \& Advisor}{Freelance Instructor}{
+  Delivered specialized technological training courses for companies (including a 300-hour Java \& Android course for Telefónica). Mentored multiple Master's Thesis (TFM) projects centered on web engineering and mobile systems.
+}
+
+\end{paracol}
+
+\end{document}

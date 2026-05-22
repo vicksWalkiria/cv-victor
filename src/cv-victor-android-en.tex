@@ -1,0 +1,131 @@
+% cv-victor-android-en.tex
+% Senior Android Resume for Víctor Alonso (English Version)
+% Compiled with XeLaTeX
+
+\documentclass[10pt,a4paper]{article}
+
+% Include premium styles and common data
+\input{src/common/style-premium.tex}
+\input{src/common/data-victor.tex}
+
+\begin{document}
+
+\begin{paracol}{2}
+
+% ==========================================
+% LEFT COLUMN: SIDEBAR
+% ==========================================
+\begin{center}
+  \profilepic{assets/victor-profile.png}
+  
+  \vspace{1.0em}
+  {\color{primary}\LARGE\bfseries \myname} \\[0.2em]
+  {\color{accent}\small\bfseries SENIOR ANDROID ENGINEER}
+\end{center}
+
+\sidehead{Contact}
+\small
+\begin{itemize}[label={}, leftmargin=0.4cm]
+  \item[\color{accent}\faEnvelope] \href{mailto:\myemail}{\myemail}
+  \item[\color{accent}\faPhone] \href{tel:\myphone}{\myphone}
+  \item[\color{accent}\faMapMarker] \mylocation
+  \item[\color{accent}\faGlobe] \href{https://\myweb}{\myweb}
+  \item[\color{accent}\faLinkedin] \href{https://\mylinkedin}{LinkedIn}
+  \item[\color{accent}\faGithub] \href{https://\mygithub}{GitHub}
+\end{itemize}
+
+\sidehead{Skills}
+\textbf{\color{primary}\footnotesize MOBILE DEVELOPMENT} \\
+\skilltag{Android SDK} \skilltag{Kotlin} \skilltag{Java} \\
+\skilltag{MVVM} \skilltag{Jetpack Compose} \skilltag{Gradle} \\
+\skilltag{Room} \skilltag{Retrofit} \skilltag{Firebase} \\
+\skilltag{Play Store Lifecycle}
+
+\vspace{0.4em}
+\textbf{\color{primary}\footnotesize BACKEND \& WEB} \\
+\skilltag{PHP} \skilltag{Laravel} \skilltag{WordPress} \\
+\skilltag{WooCommerce} \skilltag{REST APIs} \skilltag{MySQL} \\
+\skilltag{Python} \skilltag{JavaScript} \skilltag{React}
+
+\vspace{0.4em}
+\textbf{\color{primary}\footnotesize TOOLS \& DEVOPS} \\
+\skilltag{Git} \skilltag{Bitbucket} \skilltag{Linux} \\
+\skilltag{cPanel / HestiaCP} \skilltag{AWS Basic} \\
+\skilltag{Composer} \skilltag{NPM}
+
+\vspace{0.4em}
+\textbf{\color{primary}\footnotesize DATA \& AUTOMATION} \\
+\skilltag{Web Scraping} \skilltag{API Integration} \\
+\skilltag{Script Automation}
+
+\sidehead{Languages}
+\textbf{Spanish}: Native \\
+\textbf{English}: B2 Certified \\
+\textbf{German}: B2 Certified
+
+\switchcolumn
+
+% ==========================================
+% RIGHT COLUMN: MAIN CONTENT
+% ==========================================
+
+\section{Professional Profile}
+Senior Android Engineer and technical consultant with 15+ years of software engineering experience, mobile architecture, and hands-on consulting. Specialized in solving complex, real-world engineering issues: mobile performance, Gradle build optimization, advanced integrations, and rescuing delayed high-stakes startup releases ("firefighter/crisis solver"). I combine strong technical mastery with a sharp product and business vision to deliver highly maintainable, efficient, and results-oriented systems.
+
+\section{Selected Projects}
+
+\projectentry{Android Apps on Google Play}{
+  End-to-end development, native mobile architecture, and integration of advanced services (Firebase, push notifications, payment gateways, local DBs, REST APIs) for high-scale apps published on the Google Play Store.
+}
+
+\projectentry{Consulting \& Critical Issue Resolution ("Firefighting")}{
+  Immediate rescue intervention for stalled mobile projects, optimizing Gradle build times, debugging difficult memory leaks, and securing successful production releases under extreme pressure.
+}
+
+\projectentry{Technical Tools \& Automation}{
+  Custom scripting (Python/PHP), web scraping, and internal micro-APIs to connect mobile client data streams with corporate analytics dashboards.
+}
+
+\section{Professional Experience}
+
+\resumeentry{2015 -- Pres.}{Walkiria Apps}{Freelance Android Engineer \& Tech Consultant}{
+  High-impact mobile consulting and emergency engineering for Startups and SMEs with critical bugs or strict deadlines. Resolving severe production crashes, conducting Android code audits, and streamlining Gradle pipelines.
+}
+
+\resumeentry{2016 -- Pres.}{Bandoki Apps Studio}{Co-Founder \& Android Developer}{
+  Technical lead and lead developer of the native Android application \textit{Memotron}. Architecture design of native mobile projects and integration of complex external APIs.
+}
+
+\resumeentry{2018 -- 2020}{Salumedia}{Senior Software Development Engineer}{
+  FullStack development with a strong focus on mobile: native Android (Java/Kotlin), backend REST APIs (PHP Slim), Firebase, AWS integration, and real-time MQTT protocol for IoT health systems.
+}
+
+\resumeentry{2012 -- 2015}{Ontic Soluciones}{Android, PHP \& Magento Developer}{
+  Native Android development and hybrid app creation using PhoneGap. Developed high-volume e-commerce platforms using PHP and custom module extensions for Magento.
+}
+
+\resumeentry{2012 (5 mos.)}{ALTEN / Prisa Digital}{Android Developer RnD}{
+  R\&D and mobile application engineering applied to the Prisa Digital digital publishing suite in Madrid.
+}
+
+\resumeentry{2011 -- 2012}{appslab}{Android Developer \& Sysadmin}{
+  Native Android development and Linux hosting server administration via cPanel.
+}
+
+\resumeentry{2010 (4 mos.)}{Ontic Soluciones}{Android Developer \& Algorithm Specialist}{
+  Early-stage native Android development and high-performance data optimization algorithms.
+}
+
+\section{Teaching \& Education}
+
+\resumeentry{2025 -- 2026}{University of Castilla-La Mancha (UCLM)}{Substitute Lecturer \& Guest Speaker}{
+  Taught database and engineering courses inside the Computer Science Degree (Albacete campus), including: \textit{Databases}, \textit{Knowledge-Based Systems}, and \textit{Programming Methodology}.
+}
+
+\resumeentry{2018 -- Pres.}{Android \& Java SE Trainer}{Freelance Technical Instructor}{
+  Designed and delivered technical training courses for enterprise clients, including a 300-hour Java \& Android course for Telefónica, and technical courses for Formabyte. Academically mentored multiple Master's Thesis (TFM) projects centered on Android development.
+}
+
+\end{paracol}
+
+\end{document}
