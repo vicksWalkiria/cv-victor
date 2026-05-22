@@ -20,9 +20,9 @@ Víctor es Desarrollador de Software Sénior y Consultor Técnico con más de 15
 *   **Teléfono:** +34 675 94 64 86
 *   **Email:** vicks630@gmail.com
 *   **Ubicación:** Albacete, España
-*   **Sitio Web:** [victor-alonso.es](https://victor-alonso.es)
+*   **Sitios Web:** [victor-alonso.es](https://victor-alonso.es) | [walkiriaapps.com](https://walkiriaapps.com)
 *   **GitHub:** [vicksWalkiria](https://github.com/vicksWalkiria)
-*   **LinkedIn:** [linkedin.com/in/victor-alonso-es](https://linkedin.com/in/victor-alonso-es)
+*   **LinkedIn:** [linkedin.com/in/vialonso](https://linkedin.com/in/vialonso)
 
 ---
 
@@ -30,24 +30,20 @@ Víctor es Desarrollador de Software Sénior y Consultor Técnico con más de 15
 
 ### 📱 Desarrollo Móvil (Android Nativo)
 *   **Lenguajes:** Kotlin, Java.
-*   **Arquitectura:** MVVM, Inyección de Dependencias (Hilt, Dagger), Clean Architecture.
-*   **Librerías/Frameworks:** Room, Retrofit, Coroutines, Flow, LiveData, Jetpack Compose, ViewBinding.
+*   **Arquitecturas:** Clean Architecture, MVVM (Model-View-ViewModel), Jetpack Compose, LiveData/Flow, Room DB, Retrofit.
 *   **Herramientas:** Android SDK, Gradle (optimización de scripts y velocidad de compilación), Git, Firebase Suite (Analytics, Crashlytics, Push Notifications), Google Play Console (ciclo de publicación completo, ASO básico, gestión de releases).
 
-### 🌐 Desarrollo Web & Backend (FullStack)
+### 🌐 Desarrollo FullStack & Backend
 *   **Backend:** PHP (PHP 7/8), Laravel (MVC, Colas, Jobs), WordPress (Desarrollo de temas y plugins personalizados de alto rendimiento), Magento (Creación de módulos y pasarelas de pago), Python (APIs, scripting y automatizaciones).
-*   **Frontend:** HTML5, CSS3, JavaScript (ES6+), ReactJS, Bootstrap, jQuery.
-*   **Bases de Datos:** MySQL, optimización de consultas complejas e indexación.
+*   **Frontend:** HTML5, CSS3, JavaScript (ES6+), ReactJS, Bootstrap, Responsive Design.
+*   **Bases de Datos:** MySQL, PostgreSQL, optimización de consultas complejas y relacionales.
 
-### 📈 SEO Técnico Avanzado & WPO (Web Performance Optimization)
-*   **WPO:** Optimización del camino crítico de renderizado, auditorías avanzadas de Core Web Vitals (LCP, FID, CLS, INP), refactorización de CSS/JS inline, optimización de carga de imágenes (WebP, Lazy loading) y de scripts de terceros (GA4, GTM).
-*   **Indexabilidad & Rastreo:** Gestión de mapas del sitio (Sitemap XML), archivos `robots.txt`, etiquetas canónicas, redirecciones avanzadas en `.htaccess`, optimización del presupuesto de rastreo (*crawl budget*) mediante análisis de logs del servidor.
-*   **Marcado Estructurado:** Schema.org enriquecido personalizado para SEO Local, artículos, eventos y productos.
-*   **Herramientas SEO:** Google Search Console, Screaming Frog, PageSpeed Insights, Lighthouse, Ahrefs, SEMrush.
+### 📈 SEO Técnico & WPO (Web Performance)
+*   **Rendimiento:** Core Web Vitals, PageSpeed Insights, auditoría técnica WPO, optimización de carga y renderizado crítico.
+*   **Indexabilidad:** Google Search Console, estructuración Schema.org (JSON-LD), gestión del presupuesto de rastreo (*crawl budget*), auditorías de logs y redireccionamientos.
 
-### 🖥️ Infraestructura, Servidores & DevOps
-*   **Sistemas:** Linux (Ubuntu/Debian), administración de servidores web a través de paneles (HestiaCP, cPanel).
-*   **Servidores Web:** Apache, Nginx, Htaccess.
+### ⚙️ Sistemas, DevOps & Herramientas
+*   **Administración:** Servidores Linux, paneles de control (HestiaCP, cPanel), Apache, Nginx, Htaccess.
 *   **DevOps:** Control de versiones Git (GitLab, GitHub, Bitbucket), Composer (PHP), NPM (JS), integración básica de servicios cloud (AWS, EC2).
 
 ---
@@ -55,8 +51,10 @@ Víctor es Desarrollador de Software Sénior y Consultor Técnico con más de 15
 ## 🚀 Proyectos Destacados y Casos de Éxito
 
 ### 1. Aplicaciones Android Publicadas
-*   **Descripción:** Desarrollo integral (frontend, arquitectura móvil, persistencia local y sincronización con APIs) de múltiples aplicaciones publicadas en Google Play.
-*   **Impacto:** Integración estable de pasarelas de pago seguras, notificaciones push personalizadas y analíticas de comportamiento orientadas a optimizar la retención de usuarios.
+*   **Descripción:** Desarrollo nativo (Kotlin/Java) y arquitectura MVVM publicado en el perfil oficial [Google Play Developer](https://play.google.com/store/apps/dev?id=4633874941646419208).
+*   **Aplicaciones Destacadas:**
+    *   [Precio Gasolineras España](https://play.google.com/store/apps/details?id=com.walkiriaapps.topgasolineras): +100k descargas, Room DB, servicios en segundo plano de sincronización automática de precios de combustibles y APIs REST.
+    *   *Memotron*: +10k descargas, base de datos local Room, entrenamiento mental y monetización integrada.
 
 ### 2. Resolutor de Incidencias Críticas ("Bombero Tecnológico")
 *   **Descripción:** Intervención directa en proyectos heredados o atascados en fase de lanzamiento para Startups y PYMEs.

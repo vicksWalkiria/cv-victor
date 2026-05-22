@@ -20,9 +20,9 @@ Victor is a Senior Software Engineer and Technical Consultant with 15+ years of 
 *   **Phone:** +34 675 94 64 86
 *   **Email:** vicks630@gmail.com
 *   **Location:** Albacete, Spain
-*   **Website:** [victor-alonso.es](https://victor-alonso.es)
+*   **Websites:** [victor-alonso.es](https://victor-alonso.es) | [walkiriaapps.com](https://walkiriaapps.com)
 *   **GitHub:** [vicksWalkiria](https://github.com/vicksWalkiria)
-*   **LinkedIn:** [linkedin.com/in/victor-alonso-es](https://linkedin.com/in/victor-alonso-es)
+*   **LinkedIn:** [linkedin.com/in/vialonso](https://linkedin.com/in/vialonso)
 
 ---
 
@@ -30,24 +30,20 @@ Victor is a Senior Software Engineer and Technical Consultant with 15+ years of 
 
 ### 📱 Mobile Development (Native Android)
 *   **Languages:** Kotlin, Java.
-*   **Architecture:** MVVM, Dependency Injection (Hilt, Dagger), Clean Architecture.
-*   **Libraries/Frameworks:** Room, Retrofit, Coroutines, Flow, LiveData, Jetpack Compose, ViewBinding.
-*   **Tools:** Android SDK, Gradle (script optimization and build speed tuning), Git, Firebase Suite (Analytics, Crashlytics, Push Notifications), Google Play Console (full publication lifecycle, basic ASO, release management).
+*   **Architectures:** Clean Architecture, MVVM (Model-View-ViewModel), Jetpack Compose, LiveData/Flow, Room DB, Retrofit.
+*   **Tools:** Android SDK, Gradle (script optimization and compile speed), Git, Firebase Suite (Analytics, Crashlytics, Push Notifications), Google Play Console (full publishing lifecycle, basic ASO, release management).
 
-### 🌐 Web Development & Backend (FullStack)
+### 🌐 FullStack & Backend Development
 *   **Backend:** PHP (PHP 7/8), Laravel (MVC, Queues, Jobs), WordPress (high-performance custom theme & plugin development), Magento (custom module & payment gateway creation), Python (APIs, scripting, and automation).
-*   **Frontend:** HTML5, CSS3, JavaScript (ES6+), ReactJS, Bootstrap, jQuery.
-*   **Databases:** MySQL, complex query optimization, and indexing.
+*   **Frontend:** HTML5, CSS3, JavaScript (ES6+), ReactJS, Bootstrap, Responsive Design.
+*   **Databases:** MySQL, PostgreSQL, relational database and complex query optimization.
 
-### 📈 Technical SEO & WPO (Web Performance Optimization)
-*   **WPO:** Critical rendering path optimization, advanced Core Web Vitals audits (LCP, FID, CLS, INP), inline CSS/JS refactoring, image delivery optimization (WebP, Lazy loading), and third-party script deferral (GA4, GTM).
-*   **Indexability & Crawling:** Sitemap XML management, `robots.txt` configuration, canonical tags, advanced `.htaccess` redirects, server log analysis for crawl budget optimization.
-*   **Structured Markup:** Custom Schema.org rich snippets for Local SEO, articles, events, and products.
-*   **SEO Tools:** Google Search Console, Screaming Frog, PageSpeed Insights, Lighthouse, Ahrefs, SEMrush.
+### 📈 Technical SEO & WPO (Web Performance)
+*   **Performance:** Core Web Vitals, PageSpeed Insights, technical WPO auditing, critical rendering path and load speed optimization.
+*   **Indexability:** Google Search Console, Schema.org structural markup (JSON-LD), crawl budget management, server log analysis, and advanced redirections.
 
-### 🖥️ Infrastructure, Servidores & DevOps
-*   **OS:** Linux (Ubuntu/Debian), server administration via panels (HestiaCP, cPanel).
-*   **Web Servers:** Apache, Nginx, Htaccess.
+### ⚙️ Systems, DevOps & Tools
+*   **Administration:** Linux servers, web admin panels (HestiaCP, cPanel), Apache, Nginx, Htaccess.
 *   **DevOps:** Version control via Git (GitLab, GitHub, Bitbucket), Composer (PHP), NPM (JS), basic cloud integration (AWS EC2).
 
 ---
@@ -55,8 +51,10 @@ Victor is a Senior Software Engineer and Technical Consultant with 15+ years of 
 ## 🚀 Selected Projects & Success Stories
 
 ### 1. Published Android Applications
-*   **Description:** End-to-end development (frontend, mobile architecture, local persistence, and API synchronization) of multiple applications published on Google Play.
-*   **Impact:** Stable integration of secure payment gateways, custom push notifications, and user behavioral analytics designed to optimize retention metrics.
+*   **Description:** Native mobile development (Kotlin/Java) and MVVM architecture, published on my official [Google Play Developer Profile](https://play.google.com/store/apps/dev?id=4633874941646419208).
+*   **Featured Apps:**
+    *   [Precio Gasolineras España](https://play.google.com/store/apps/details?id=com.walkiriaapps.topgasolineras): +100k downloads, Room DB, background services for automated fuel price synchronization, and REST APIs.
+    *   *Memotron*: +10k downloads, Room local database, mental training app with active monetization.
 
 ### 2. Critical Issue Resolution ("Technical Firefighter")
 *   **Description:** Hands-on emergency intervention in legacy or stalled release-phase projects for Startups and SMEs.
